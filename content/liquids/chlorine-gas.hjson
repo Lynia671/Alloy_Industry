@@ -1,0 +1,13 @@
+{
+	"type": "liquid",
+	"name": "氯气",
+	"description": "黄绿色有毒气体。用于化工生产和消毒",
+	"color": "9ACD32",
+	"gas": true,
+	"flammability": 0,
+	"explosiveness": 0.3,
+	"temperature": 0.3,
+	"viscosity": 0.2,
+	"barColor": "7CB342",
+	"gasColor": "AED581"
+}

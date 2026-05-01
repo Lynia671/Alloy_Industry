@@ -1,0 +1,37 @@
+{
+	"type": "Wall",
+	"name": "大型蜂窝煤压块墙",
+	"description": "经过多次压实后的抗火能力还不错。",
+	"size": 2,
+	"health": 1350,
+	"armor": 6.0,
+	"requirements": [
+		"honeycomb-coal/28" 
+	],
+	"category": "defense",
+	"research": "honeycomb-coal-wall",
+	"flammability": 0.4,
+	"hitEffect": {
+		"type": "ParticleEffect",
+		"particles": 5,
+		"baseLength": 2,
+		"length": 8,
+		"lifetime": 15,
+		"sizeFrom": 3,
+		"sizeTo": 0,
+		"colorFrom": "FFA500AA", 
+		"colorTo": "FF450000",
+		"interp": "pow10Out"
+	},
+	
+	"destroyEffect": {
+		"type": "ExplosionEffect",
+		"radius": 15,
+		"colorFrom": "FF4500",
+		"colorTo": "FFFF00",
+		"sparkCone": 180,
+		"sparkLen": 30,
+		"smokeColor": "333333",
+		"damage": 20 
+	},
+}

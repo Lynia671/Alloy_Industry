@@ -1,0 +1,57 @@
+{
+	"type": "NuclearReactor",
+	"name": "锎-255链式脉冲核分裂堆",
+	"description": "利用锎-252的高频自发裂变产生巨量电力。采用最先进的冷却技术控制堆芯[red]正常工作温度，必须持续冷却才能正常工作，若冷却供应不足则会导致堆芯持续积热直到温度超过29000℃，融毁后剧烈核爆炸。",
+	"size": 5,
+	"health": 2500,
+	"armor": 15.0,
+	"fuelItem": "californium-252",
+	"itemCapacity": 320,
+	"liquidCapacity": 1050,
+	"powerProduction": 1800.0,
+	"itemDuration": 30,
+	"heating": 0.08,
+	"coolantPower": 0.12,
+	"explosiveness": 10.0,
+	"consumes": {
+		"items": [
+			{
+				"item": "californium-252",
+				"amount": 2
+			},
+            {
+                "item": "uranium-235"
+                "amount": 1
+            }
+		],
+		"liquid": {
+			"liquid": "cryofluid",
+			"amount": 2.8
+		}
+	},
+	//"outputItem": "scrap/5",
+	"requirements": [
+		"lead/6500",
+		"titanium-alloy/2700",
+		"aluminum-alloy/1400",
+        "reinforced-glass/575",
+        "pulse-alloy/30"
+        "electromagnetic-coil/2750",
+        "silicon/2320",
+        "graphite/4240",
+        "carbon-fiber/575",
+        "thorium/1150",
+		"californium-252/110"
+	],
+	"category": "power",
+	"research": "uranium-235-craftor",
+	"ambientSound": "loopReactor",
+	"ambientSoundVolume": 0.6,
+	"lightColor": "C77FFF",
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			"DrawDefault"
+		]
+	}
+}

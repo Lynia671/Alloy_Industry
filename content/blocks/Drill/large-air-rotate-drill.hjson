@@ -1,0 +1,37 @@
+{
+	"type": "Drill",
+	"name": "气旋钻头",
+	"description": "气动钻头Plus",
+	"size": 3,
+	"health": 900,
+	"armor": 8.0,
+	"itemCapacity": 60,
+	"tier": 4,
+	"drillTime": 38,
+	"requirements": [
+		"copper/120",
+		"lead/100",
+		"titanium/80",
+	],
+	"category": "production",
+	"research": "large-mechanical-drill",
+	"ambientSound": "loopDrill",
+	"ambientSoundVolume": 0.9,
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			"DrawDefault",
+			{
+				"type": "DrawRegion",
+				"suffix": "-rotator",
+				"spinSpeed": 8.0
+			},
+			{
+				"type": "DrawGlowRegion",
+				"color": "FFA500",
+				"alpha": 0.5,
+				"bumpScale": 1.0
+			}
+		]
+	}
+}

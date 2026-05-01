@@ -1,0 +1,60 @@
+{
+	"type": "GenericCrafter",
+	"name": "钛合金冶炼炉",
+	"outputItem": "titanium-alloy/3",
+
+	"size": 3,
+	"hasPower": true,
+	"hasLiquids": false,
+	"hasItems": true,
+	
+	"craftTime": 45,
+	"itemCapacity": 20,
+	
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			"DrawDefault",
+			{
+				"type": "DrawFlame",
+				"flameColor": "93A8C4"
+			}
+		]
+	},
+	
+	"craftEffect": {
+		"type": "ParticleEffect",
+		"particles": 3,
+		"baseLength": 2,
+		"length": 15,
+		"lifetime": 20,
+		"sizeFrom": 8,
+		"sizeTo": 0,
+		"colorFrom": "93A8C480",
+		"colorTo": "93A8C4"
+	},
+	
+	"consumes": {
+		"power": 4.2,
+		"items": {
+			"items": [
+				"titanium/3",
+				"copper/1"
+			]
+		}
+	},
+	
+	"requirements": [
+		"copper/120",
+		"lead/80",
+		"metaglass/60",
+		"titanium/60",
+		"silicon/40",
+		"electromagnetic-coil/20"
+	],
+	
+	"category": "crafting",
+	"ambientSound": "loopSmelter",
+	"ambientSoundVolume": 0.7,
+	"research": "core-protect"
+}

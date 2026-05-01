@@ -1,0 +1,42 @@
+{
+  "type": "Pump",
+  "name": "电磁泵",
+  "description": "基于电磁驱动原理的超流泵，输送效率远超普通泵。[orange]需要稳定电力供应。",
+  "size": 3,
+  "health": 600,
+  "armor": 4.0,
+  "liquidCapacity": 300,
+  "consumes": {
+    "power": {
+      "usage": 2.6
+    }
+  },
+  "requirements": [
+    "copper/200",
+    "lead/150",
+    "silicon/120",
+    "electromagnetic-coil/150",
+    "metaglass/100",
+    "titanium-alloy/200"
+  ],
+  "category": "liquid",
+  "research": "core-protect",
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      "DrawDefault",
+      {
+        "type": "DrawLiquidTile",
+        "drawLiquid": "water",
+        "alpha": 0.4
+      },
+      {
+        "type": "DrawGlowRegion",
+        "color": "4DB8FF",
+        "alpha": 0.6
+      }
+    ]
+  },
+  "ambientSound": "loopElectricHum",
+  "ambientSoundVolume": 0.3
+}

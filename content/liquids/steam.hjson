@@ -1,0 +1,15 @@
+{
+	"name": "蒸汽",
+	"type": "liquid",
+	"color": "E8E8E8",
+	"temperature": 1.5,
+	"viscosity": 0.15,
+	"heatCapacity": 1.2,
+	"gasTemperature": 0.0,
+	"flammability": 0,
+	"explosiveness": 0,
+	"radioactivity": 0,
+	"barrier": false,
+	"lightColor": "FFFFFF",
+	"research": "water"
+}

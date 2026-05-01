@@ -1,0 +1,62 @@
+{
+	"type": "MassDriver",
+	"name": "电磁轨道驱动器",
+	"description": "采用革命性的内置电容加热技术，利用超级电容组瞬时放电产生的高能热脉冲驱动线性轨道。最大射程 120 格，需要持续输入冷却水防止电容过热熔毁。排出的高温蒸汽是其高效运行的证明。",
+	"size": 4,//建筑大小
+	"health": 1500,//血量
+	"armor": 15.0,//护甲
+	"range": 1020,//范围
+	"reloadTime": 3.2,//装弹时间
+	"itemCapacity": 600,//物品容量
+	"liquidCapacity": 150,//液溶
+	"requirements": [
+		"aluminum-alloy/120",
+		"electromagnetic-coil/80",
+		"silicon/100",
+		"carbon-fiber/60",
+		"reinforced-glass/50",
+		"thorium/40",
+		"polypropylene-fiber/30"
+	],//建造花费
+	"category": "distribution",
+	"research": "electronic-bridge",//科技树研究前置
+	"consumes": {
+		"power": 15.0,
+		"liquid": {
+			"liquid": "water",
+			"amount": 0.4
+		}//运行需要的东西
+	},
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			"DrawDefault",
+			{
+				"type": "DrawRegion",
+				"suffix": "-top",
+				//引用基座图
+				"alpha": 1.0
+			},
+			{
+				"type": "DrawRegion",
+				"suffix": "-light",
+				//缩放淡入淡出的脉冲动画
+				"alpha": 1.0
+			},
+			{
+				"type": "DrawGlowRegion",
+				"suffix": "-light",
+				//给光效层叠加发光效果
+				"color": "00FFFF",
+				"alpha": 0.7,
+				"bumpScale": 1.5
+			}
+		]
+	},
+	"ambientSound": "loopReactor",
+	"ambientSoundVolume": 1.0,
+	"buildCostMultiplier": 5.0,//建造时间
+	"shootEffect": "shootBig",
+	"smokeEffect": "none",
+	"canOverdrive": false//是否可以被超速
+}

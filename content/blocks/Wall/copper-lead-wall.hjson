@@ -1,0 +1,12 @@
+{
+	"name": "铜铅复合合金墙",
+	"type": "Wall",
+	"health": 510,
+	"size": 1,
+	"requirements": [
+		"copper/4",
+		"lead/7"
+	],
+	"category": "defense",
+	"research": "core-protect"
+}

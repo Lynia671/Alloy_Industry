@@ -1,0 +1,73 @@
+{
+  "type": "ItemTurret",
+  "name": "断裂",
+  "description": "把分裂的支撑架拆掉后的产物，[red]无法对空！",
+  "size": 2,
+  "health": 320,
+  "armor": 4.0,
+  "itemCapacity": 40,
+  "reload": 15,
+  "range": 180,
+  "inaccuracy": 15,
+  "ammoUseEffect": "casing2",
+  "shootCone": 360,
+  "targetAir": false,
+  "targetGround": true,
+  "ammoTypes": {
+    "copper": {
+      "damage": 7,
+      "speed": 6,
+      "lifetime": 30,
+      "spread": 10,
+      "bullets": 5
+    },
+    "lead": {
+      "damage": 9,
+      "speed": 5.5,
+      "lifetime": 33,
+      "spread": 10,
+      "bullets": 5
+    },
+    "graphite": {
+      "damage": 11,
+      "speed": 7,
+      "lifetime": 27,
+      "spread": 10,
+      "bullets": 5
+    },
+    "silicon": {
+      "damage": 13,
+      "speed": 6.5,
+      "lifetime": 29,
+      "spread": 10,
+      "bullets": 5
+    },
+    "titanium": {
+      "damage": 16,
+      "speed": 7.5,
+      "lifetime": 25,
+      "spread": 10,
+      "bullets": 5
+    },
+    "thorium": {
+      "damage": 20,
+      "speed": 8,
+      "lifetime": 23,
+      "spread": 10,
+      "bullets": 5
+    },
+    "plastanium": {
+      "damage": 24,
+      "speed": 9,
+      "lifetime": 21,
+      "spread": 10,
+      "bullets": 5
+    }
+  },
+  "requirements": [
+    "copper/90",
+    "lead/70"
+  ],
+  "category": "turret",
+  "research": "duo-ultra"
+}

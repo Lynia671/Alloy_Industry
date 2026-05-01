@@ -1,0 +1,82 @@
+{
+    "type": "ConsumeGenerator",
+    "name": "涡流发电机",
+    "size": 2,
+    "description": "为斯维特顿设计的涡流式风力发电机，但及其脆弱，现在只能在普赛罗使用。",
+    "health": 450,
+    "powerProduction": 1.2,
+    "consumes": {},
+    "requirements": [
+        "copper/60",
+        "lead/40",
+        "titanium/30",
+        "silicon/20"
+    ],
+    "category": "power",
+    "research": "core-protect",
+    "ambientSound": "loopWind",
+    "ambientSoundVolume": 0.6,
+    "drawer": {//讯喵改的勾石纹理绘制器,与模组开发者无关
+        "type": "DrawMulti",
+        "drawers": [
+            "DrawDefault",
+            {
+                "type": "DrawRegion",
+                "suffix": "-zhuan1",
+                "rotateSpeed": -4 ,
+                "rotation": 45
+            },
+            {
+                "type": "DrawRegion",
+                "suffix": "-zhuan2",
+                "rotateSpeed": 4 ,
+                "rotation": 60
+            },
+            {
+                "type": "DrawRegion",
+                "suffix": "-ding3"
+            }
+        ]
+    }
+}
+
+
+//旧代码
+/*
+{
+    "type": "ConsumeGenerator",
+    "name": "涡流发电机",
+    "size": 2,
+    "description": "为斯维特顿设计的涡流式风力发电机，但及其脆弱，现在只能在普赛罗使用。",
+    "health": 450,
+    "powerProduction": 0.4,
+     "consumes": {}
+    "requirements": [
+        "copper/60",
+        "lead/40",
+        "titanium/30",
+        "silicon/20"
+    ],
+    "category": "power",
+    "research": "core-protect",
+    "ambientSound": "loopWind",
+    "ambientSoundVolume": 0.6,
+    "drawer": {
+        "type": "DrawMulti",
+        "drawers": [
+            "DrawDefault",
+            {
+                "type": "DrawRegion",
+                "suffix": "-rotator",
+                "spinSpeed": 4.0
+            },
+            {
+                "type": "DrawGlowRegion",
+                "color": "A0D8EF",
+                "alpha": 0.5,
+                "bumpScale": 0.8
+            }
+        ]
+    }
+}
+*/

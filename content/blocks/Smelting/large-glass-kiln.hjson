@@ -1,0 +1,58 @@
+{
+	"type": "GenericCrafter",
+	"name": "大型玻璃窑炉",
+	"outputItem": "metaglass/6",
+	"size": 4,
+	"hasPower": true,
+	"hasLiquids": false,
+	"hasItems": true,
+	"craftTime": 120,
+	"itemCapacity": 60,
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			"DrawDefault",
+			{
+				"type": "DrawFlame",
+				"flameColor": "FFA500"
+			},
+			{
+				"type": "DrawGlowRegion",
+				"color": "FFD700",
+				"alpha": 0.5
+			}
+		]
+	},
+	"craftEffect": {
+		"type": "ParticleEffect",
+		"particles": 6,
+		"baseLength": 3,
+		"length": 25,
+		"lifetime": 30,
+		"sizeFrom": 12,
+		"sizeTo": 0,
+		"colorFrom": "FFA50080",
+		"colorTo": "FFFFFF"
+	},
+	"consumes": {
+		"power": 5.8,
+		"items": {
+			"items": [
+				"sand/14",
+				"lead/6"
+			]
+		}
+	},
+	"requirements": [
+		"copper/150",
+		"lead/100",
+		"metaglass/30"
+		"graphite/50",
+		"silicon/80",
+		"titanium/40"
+	],
+	"category": "crafting",
+	"ambientSound": "loopSmelter",
+	"ambientSoundVolume": 0.9,
+	"research": "glass-smelter"
+}

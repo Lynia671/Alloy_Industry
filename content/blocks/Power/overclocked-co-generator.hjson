@@ -1,0 +1,170 @@
+{
+	"type": "NuclearReactor",
+	"name": "一氧化碳热频反应堆",
+	"description": "利用压缩一氧化碳燃烧产生巨大热能。[red]警告：必须持续供应冷却水，否则反应堆过热将导致灾难性爆炸！",
+	"size": 3,
+	"health": 900,
+	"armor": 5.0,
+	"itemCapacity": 60,
+	"liquidCapacity": 120,
+	"powerProduction": 5.0,
+	"itemDuration": 120,
+	"outputLiquid": "steam",
+    "fuelItem": "zip-carbon-monoxide",
+	"heating": 0.02,
+	"coolantPower": 0.04,
+	"explosiveness": 1.0,
+	"consumes": {
+		"items": [
+			{
+				"item": "zip-carbon-monoxide",
+				"amount": 1
+			}
+		],
+		"liquid": {
+			"liquid": "water",
+			"amount": 0.5,
+			"update": false
+		}
+	},
+	"requirements": [
+		"copper/150",
+		"lead/120",
+		"silicon/100",
+		"titanium/80",
+		"graphite/50"
+	],
+	"category": "power",
+	"research": "polar-wind-turbine",
+	"ambientSound": "loopReactor",
+	"ambientSoundVolume": 0.8,
+	"lightColor": "FF4500",
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			"DrawDefault",
+		]
+	}
+}
+
+
+
+
+/*
+{
+	"type": "NuclearReactor",
+	"name": "一氧化碳热频反应堆",
+	"description": "利用压缩一氧化碳燃烧产生巨大热能。[red]警告：必须持续供应冷却水，否则反应堆过热将导致灾难性爆炸！",
+	"size": 3,
+	"health": 900,
+	"armor": 5.0,
+	"itemCapacity": 60,
+	"liquidCapacity": 120,
+	"powerProduction": 5.0,
+	"itemDuration": 120,
+	"explosiveness": 1.0,
+	"consumes": {
+		"items": [
+			{
+				"item": "zip-carbon-monoxide",
+				"amount": 1
+			}
+		],
+		"liquid": {
+			"liquid": "water",
+			"amount": 0.5
+		}
+	},
+	"requirements": [
+		"copper/150",
+		"lead/120",
+		"silicon/100",
+		"titanium/80",
+		"graphite/50"
+	],
+	"category": "power",
+	"research": "thorium-reactor",
+	"ambientSound": "loopReactor",
+	"ambientSoundVolume": 0.8,
+	"lightColor": "FF4500",
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			"DrawDefault",
+			{
+				"type": "DrawGlowRegion",
+				"color": "FF4500",
+				"alpha": 0.7,
+				"bumpScale": 1.0
+			}
+		]
+	}
+}
+*/
+
+
+
+/*
+{
+	"type": "HeatGenerator",
+	"name": "一氧化碳热频反应堆",
+	"description": "利用压缩一氧化碳燃烧产生巨大热能。[red]警告：必须持续供应水和燃料，否则温度失控将导致爆炸！",
+	"size": 3,
+	"health": 900,
+	"itemCapacity": 60,
+	"liquidCapacity": 120,
+	"powerProduction": 1.8,
+	"basePowerProduction": 1.8,
+	"basePowerProduction": 5.0,
+	"explosionRadius": 5,
+	"explosionDamage": 1000,
+	"maxTemperature": 2500,
+	"generateSpeed": 2.5,
+	"coolantMultiplier": 3.0,
+	
+	"consumes": {
+		"items": {
+			"items": [
+				"zip-carbon-monoxide/1"
+			]
+		},
+		"coolant": {
+			"liquid": "water",
+			"amount": 0.5
+		}
+	},
+	
+	"requirements": [
+		"copper/150",
+		"lead/120",
+		"silicon/100",
+		"titanium/80",
+		"graphite/50"
+	],
+	
+	"category": "power",
+	"research": "zip-carbon-monoxide",
+	
+	"ambientSound": "loopSmelter",
+	"ambientSoundVolume": 0.8,
+	
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			"DrawDefault",
+			{
+				"type": "DrawFlame",
+				"flameColor": "FF4500",
+				"flameRadius": 4,
+				"flameRadiusIn": 2
+			},
+			{
+				"type": "DrawGlowRegion",
+				"color": "FF4500",
+				"alpha": 0.7,
+				"bumpScale": 1.0
+			}
+		]
+	},
+}
+*/

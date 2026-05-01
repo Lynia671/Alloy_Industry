@@ -1,0 +1,43 @@
+{
+	"name": "西塔",
+	"description": "第五代核心机。拥有极高的存储容量和防御力，保护末代核心",
+	"health": 5000,
+	"armor": 30,
+	"speed": 3.8,
+	"drag": 0.12,
+	"mass": 40,
+	"engineSize": 0,
+	"engineOffset": 0,
+	"itemCapacity": 600,
+	"mineSpeed": 6.0,
+	"mineTier": 9,
+	"buildSpeed": 5,
+	"payLoadCapacity": 0,
+	"flying": true,
+	"lowAltitude": true,
+	"weapons": [
+    {
+      "name": "theta-weapon",
+      "reload": 3,
+      "range": 60,
+      "alternate": true,
+      "shootSound": "laser",
+      "shootCone": 5,
+      "recoil": 2.0,
+      "bullets": [
+        {
+          "type": "BasicBulletType",
+          "damage": 180,
+          "speed": 12,
+          "lifetime": 60,
+          "width": 12,
+          "height": 14,
+          "hitEffect": "hitBullet",
+          "despawnEffect": "hitSmallExplosion"
+        }
+      ]
+    }
+  ],
+	"category": "core",
+	"alwaysUnlocked": true
+}

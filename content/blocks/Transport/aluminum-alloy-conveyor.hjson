@@ -1,0 +1,25 @@
+{
+    "type": "Conveyor",
+    "name": "铝合金传送带",
+    "speed": 2,
+    "displayedSpeed": 30,
+    "health": 190,
+    "requirements": [
+        "aluminum-alloy/1",
+        "carbon-fiber/2"
+    ],
+    "category": "distribution",
+    "research": "titanium-alloy-conveyor",
+    "drawer": {
+        "type": "DrawMulti",
+        "drawers": [
+            "DrawDefault",
+            {
+                "type": "DrawGlowRegion",
+                "color": "00FFFF",
+                "alpha": 0.6,
+                "bumpScale": 0.8
+            }
+        ]
+    }
+}

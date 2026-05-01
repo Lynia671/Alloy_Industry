@@ -1,0 +1,26 @@
+{
+	"name": "牢大",
+	"description": "传奇重型飞行单位。[yellow]Man! 无武装纯靠质量碾压，坠毁时将引发灾难性冲击。[red]See you again...",
+	"health": 23000,
+	"armor": 60,
+	"shieldHealth": 2000,
+	"shieldRange": 45,
+	"shieldRegen": 1.5,
+	"speed": 4.2,
+	"drag": 0.05,
+	"mass": 150,
+	"engineSize": 0,
+	"hitSize": 22,
+	"rotateSpeed": 2.5,
+	"itemCapacity": 280,
+	"flying": true,
+	"lowAltitude": false,
+	"weapons": [],
+	"crashDamageMultiplier": 10.0,
+	"immunities": [
+		"burning"
+	],
+	"category": "unit",
+	"drawLevel": 95,
+	"research": "assist-drone"
+}

@@ -1,0 +1,26 @@
+{
+	"type": "Constructor",
+	"name": "图省事之融合载荷打印平台",
+	"health": 1800,
+	"minBlockSize": 2,
+	"maxBlockSize": 4,
+	"size": 5,
+	"buildSpeed": 6,
+	"liquidCapacity": 30,
+	"filter":["reinforced-alti-alloy-wall","big-reinforced-glass-wall","big-copper-lead-wall","californium-fission-stack","big-pulse-wall"],
+	"consumes": {
+		"power": 10
+	},
+	"requirements": [
+		"silicon/500",
+		"aluminum-alloy/350",
+		"titanium/600",
+		"thorium/450",
+		"electromagnetic-coil/200",
+		"pulse-alloy/1"
+	],
+	"category": "units",
+	"research": {
+		"parent": "gunship-assembler"
+	}
+}

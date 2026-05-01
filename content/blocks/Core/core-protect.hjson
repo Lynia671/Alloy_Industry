@@ -1,0 +1,17 @@
+{
+	"type": "CoreBlock",
+	"name": "坦护核心",
+	"description": "第一代核心。采用合金强化装甲，提供基础防御和存储能力。[lightgray]可以被更高级的核心覆盖升级。",
+	"size": 2,
+	"health": 4000,
+	"armor": 4.0,
+	"itemCapacity": 7000,
+	"unitCapModifier": 6,
+	"unitType": "delta",
+	"requirements": [
+		"copper/1800",
+		"lead/1600"
+	],
+	"category": "effect",
+	"research": "mechanical-drill"
+}

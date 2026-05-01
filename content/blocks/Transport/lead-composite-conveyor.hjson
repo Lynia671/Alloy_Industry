@@ -1,0 +1,23 @@
+{
+	"type": "Conveyor",
+	"name": "铅复合传送带",
+	"description": "采用铅和废料复合结构的高速传送带，成本低廉，适合大规模铺设。",
+	"size": 1,
+	"health": 120,
+	"armor": 2.0,
+	"requirements": [
+		"lead/3",
+		"scrap/2"
+	],
+	"category": "distribution",
+	"research": "core-protect",
+	"speed": 0.12,
+	"displaySpeed": 7.2,
+	"buildCostMultiplier": 1.0,
+	"drawer": {
+		"type": "DrawConveyor",
+		"padLight": true
+	},
+	"buildVisibility": "shown",
+	"alwaysUnlocked": false
+}

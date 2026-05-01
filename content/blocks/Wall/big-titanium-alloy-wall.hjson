@@ -1,0 +1,20 @@
+{
+  "type": "Wall",
+  "name": "大型钛合金墙",
+  "description": "采用强化钛合金打造的终极防御墙。[orange]极高的结构与抗爆性能，可抵御重型火力饱和打击。",
+  "size": 3,
+  "health": 6400,
+  "armor": 14.0,
+  "requirements": [
+    "titanium-alloy/150",
+    "lead/80"
+  ],
+  "category": "defense",
+  "research": "big-copper-lead-wall",
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      "DrawDefault"
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+{
+    "type": "GenericCrafter",
+    "name": "相织布电磁打印机",
+    "description": "利用高精密3D打印技术替代落后编布技术，大幅缩短相织布生产周期。",
+    "requirements": [
+        "copper/380",
+        "aluminum-alloy/410",
+        "electromagnetic-coil/675",
+        "plastic/184"
+        "lead/160",
+        "silicon/240",
+        "titanium-alloy/730",
+        "reinforced-glass/40",
+        "phase-fabric/20"
+    ],
+    "category": "crafting",
+    "size": 3,
+    "health": 420,
+    "craftTime": 24,
+    "itemCapacity": 180,
+    "outputItem": "phase-fabric/12",
+    "consumes": {
+        "power": 5.6,
+        "items": [
+            "thorium/30",
+            "sand/50"
+        ]
+    },
+    "drawer": {
+        "type": "DrawMulti",
+        "drawers": [
+            { "type": "DrawDefault" },
+            { "type": "DrawRegion", "suffix": "-top", "layer": 1 },
+            { "type": "DrawParticles", "color": "#8a9bf7", "alpha": 0.9, "particleSize": 1.5, "particles": 8, "particleRad": 8.0, "particleLife": 60.0 }
+        ]
+    },
+    "ambientSound": "loopArc",
+    "ambientSoundVolume": 0.07,
+    "craftEffect": "none",
+    "updateEffect": "none",
+    "warmupSpeed": 0.04
+}

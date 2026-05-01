@@ -1,0 +1,60 @@
+{
+	"type": "GenericCrafter",
+	"name": "热硅炉",
+	"description": "采用电磁加热技术的高效硅熔炉。生产速度是普通硅熔炉的 3 倍，但需要大量电力和冷却水。",
+	"size": 3,
+	"health": 1200,
+	"armor": 8.0,
+	"itemCapacity": 30,
+	"liquidCapacity": 40,
+	"craftTime": 20,
+	"consumes": {
+		"power": 3.0,
+		"items": [
+			{
+				"item": "sand",
+				"amount": 5
+			},
+			{
+				"item": "coal",
+				"amount": 2
+			}
+		],
+		"liquid": {
+			"liquid": "water",
+			"amount": 0.1,
+			"boost": true
+		}
+	},
+	"outputItem": {
+		"item": "silicon",
+		"amount": 3
+	},
+	"liquidBoostIntensity": 1.5,
+	"requirements": [
+		"copper/400",
+		"lead/180",
+		"silicon/60",
+		"graphite/40",
+        "metaglass/30"
+		"aluminum-alloy/230"
+	],
+	"category": "crafting",
+	"research": "aluminum-alloy-smelter",
+	"ambientSound": "loopSmelter",
+	"ambientSoundVolume": 0.06,
+	"craftEffect": "smeltsmoke",
+	"updateEffect": "pulverizeSmall",
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			"DrawDefault",
+			{
+				"type": "DrawFlame",
+				"flameColor": "FFA500",
+				"flameRadius": 4,
+				"flameRadiusIn": 2
+			}
+		]
+	}
+}

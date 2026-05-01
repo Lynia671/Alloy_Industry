@@ -1,0 +1,52 @@
+{
+	"type": "GenericCrafter",
+	"name": "氧化铝置换机",
+	"outputItem": "alumina/2",
+	"size": 2,
+	"hasPower": true,
+	"hasLiquids": false,
+	"hasItems": true,
+	"health": 900,
+	"craftTime": 75,
+	"itemCapacity": 40,
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			"DrawDefault",
+			{
+				"type": "DrawFlame",
+				"flameColor": "E8E4D9"
+			}
+		]
+	},
+	"craftEffect": {
+		"type": "ParticleEffect",
+		"particles": 6,
+		"baseLength": 3,
+		"length": 15,
+		"lifetime": 25,
+		"sizeFrom": 8,
+		"sizeTo": 0,
+		"colorFrom": "F0F0E680",
+		"colorTo": "FFFFFF"
+	},
+	"consumes": {
+		"power": 5.0,
+		"items": {
+			"items": [
+				"sand/15",
+				"lead/3"
+			]
+		}
+	},
+	"requirements": [
+		"copper/120",
+		"lead/100",
+		"silicon/60",
+		"titanium/40"
+	],
+	"category": "crafting",
+	"ambientSound": "loopMachine",
+	"ambientSoundVolume": 0.7,
+	"research": "titanium-alloy-smelter"
+}

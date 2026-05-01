@@ -1,0 +1,37 @@
+{
+	"type": "CoreBlock",
+	"name": "轻量核心",
+	"description": "可携带的应急核心。[red]非常脆弱，需要保护！支持升级为坦护核心。",
+	"size": 1,
+	"health": 500,
+	"armor": 2.0,
+	"itemCapacity": 3000,
+	"powerCapacity": 10000,
+	"unitCapModifier": 4,
+	"unitType": "pulse",
+	"team": "sharded",
+	"coreZoneBuildable": true,
+	"floating": true,
+	"requirements": [
+		"copper/100",
+		"lead/80",
+	],
+	"category": "effect",
+	"research": "core-protect",
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			"DrawDefault",
+			{
+				"type": "DrawTeamRegion",
+				"suffix": "-team"
+			},
+			{
+				"type": "DrawGlowRegion",
+				"color": "A8C8E0",
+				"alpha": 0.6,
+				"bumpScale": 0.8
+			}
+		]
+	}
+}

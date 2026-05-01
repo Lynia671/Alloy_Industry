@@ -1,0 +1,44 @@
+{
+	"type": "GenericCrafter",
+	"name": "铀浓缩离心机",
+	"description": "通过高速离心分离天然铀，生产浓缩铀-235。",
+	"size": 2,
+	"health": 900,
+	"armor": 5.0,
+	"itemCapacity": 60,
+	"craftTime": 120,
+	"consumes": {
+		"power": {
+			"usage": 4.5
+		},
+		"items": [
+			{
+				"item": "thorium",
+				"amount": 6
+			},
+			{
+				"item": "lead",
+				"amount": 4
+			}
+		]
+	},
+	"outputItem": "uranium-235/2",
+	"requirements": [
+		"copper/200",
+		"lead/250",
+        "aluminum-alloy/130",
+		"silicon/150",
+		"thorium/100",
+		"graphite/80"
+	],
+	"category": "crafting",
+	"research": "core-zenith",
+	"ambientSound": "loopSmelter",
+	"ambientSoundVolume": 0.4,
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			"DrawDefault"
+		]
+	}
+}

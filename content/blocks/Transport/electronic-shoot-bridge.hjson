@@ -1,0 +1,48 @@
+{
+	"type": "ItemBridge",
+	"name": "电磁弹射塔",
+	"description": "采用先进的电磁轨道加速技术，将物品分解进行超远距离瞬时弹射。最大有效射程 50 格。",
+	"size": 1,
+	"health": 600,
+	"armor": 20.0,
+	"range": 50,
+	"transportTime": 1,
+	"consumes": {
+		"power": 0.167
+	},
+	"arrowSpacing": 12,
+	"arrowOffset": 6,
+	"arrowTimeScl": 8,
+	"bridgeWidth": 12,
+	"requirements": [
+		"aluminum-alloy/12",
+		"electromagnetic-coil/10",
+		"silicon/12",
+		"carbon-fiber/8",
+		"reinforced-glass/6",
+		"thorium/8",
+		"polypropylene-fiber/5"
+	],
+	"category": "distribution",
+	"research": "electronic-shoot-bridge",
+	"insulated": true,
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			"DrawDefault",
+			{
+				"type": "DrawGlowRegion",
+				"color": "FF4500",
+				"alpha": 0.9,
+				"bumpScale": 1.8
+			},
+			{
+				"type": "DrawPhaseField",
+				"color": "FF450070"
+			}
+		]
+	},
+	"ambientSound": "loopSpore",
+	"ambientSoundVolume": 0.9,
+	"buildCostMultiplier": 3.0
+}

@@ -1,0 +1,14 @@
+{
+    "requirements": [
+        "titanium-alloy/1300",
+        "lead/600",
+        "thorium/900"
+    ],
+    "type": "StorageBlock",
+    "name": "超巨型核心接口扩展仓库Pro",
+    "size": 15,
+    "health": 2800,
+    "itemCapacity": 54000,
+    "research": "great-heavy-storage",
+    "category": "effect"
+}

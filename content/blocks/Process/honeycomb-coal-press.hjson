@@ -1,0 +1,47 @@
+{
+	"type": "GenericCrafter",
+	"name": "蜂窝煤冲压机",
+	"outputItem": "honeycomb-coal/4",
+	"size": 2,
+	"hasPower": true,
+	"hasLiquids": false,
+	"hasItems": true,
+	"health": 450,
+	"craftTime": 30,
+	"itemCapacity": 15,
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			"DrawDefault",
+		]
+	},
+	"craftEffect": {
+		"type": "ParticleEffect",
+		"particles": 3,
+		"baseLength": 1,
+		"length": 8,
+		"lifetime": 15,
+		"sizeFrom": 4,
+		"sizeTo": 0,
+		"colorFrom": "3D3D3D80",
+		"colorTo": "666666"
+	},
+	"consumes": {
+		"power": 1.2,
+		"items": {
+			"items": [
+				"coal/4",
+				"sand/1"
+			]
+		}
+	},
+	"requirements": [
+		"copper/50",
+		"lead/30",
+		"sand/20"
+	],
+	"category": "crafting",
+	"ambientSound": "loopMachine",
+	"ambientSoundVolume": 0.5,
+	"research": "core-protect"
+}

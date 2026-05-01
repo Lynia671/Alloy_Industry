@@ -1,0 +1,15 @@
+{
+	"name": "氧",
+	"type": "liquid",
+	"color": "B0E0F5",
+	"temperature": 0.1,
+	"viscosity": 0.2,
+	"heatCapacity": 0.3,
+	"gasTemperature": 0.0,
+	"flammability": 0,
+	"explosiveness": 0,
+	"radioactivity": 0,
+	"barrier": false,
+	"lightColor": "E0F7FA",
+	"research": "water"
+}

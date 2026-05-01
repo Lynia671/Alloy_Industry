@@ -1,0 +1,51 @@
+{
+	"type": "UnitAssembler",
+	"name": "通量悬浮单位构建中心",
+	"health": 3600,
+	"size": 8,
+	"liquidCapacity": 120,
+	"consumes": {
+		"power": 20
+	},
+	"areaSize": 18,
+	"plans": [
+		{
+			"unit": "man",
+			"time": 5500,
+			"requirements": [
+				"合金工业-reinforced-alti-alloy-wall/2",
+				"合金工业-big-copper-lead-wall/3"
+			],
+			"liquidReq":[
+				"cryofluid/2"
+			]
+		},
+		{
+			"unit": "assist-drone",
+			"time": 3000,
+			"requirements":[
+				"合金工业-reinforced-alti-alloy-wall/1"
+			]
+		},
+		{
+			"unit": "wyvern",
+			"time": 10600,
+			"requirements":[
+				"合金工业-reinforced-alti-alloy-wall/12",
+				"合金工业-californium-fission-stack/1",
+				"合金工业-big-pulse-wall/3"
+			]		
+		}
+	],
+	"droneType": "assembly-drone",
+	"requirements": [
+		"phase-fabric/750",
+		"aluminum-alloy/900",
+		"carbon-fiber/1200",
+		"reinforced-glass/1000",
+        "pulse-alloy/8",
+		"titanium-alloy/480"
+	],
+	"research": {"parent": "core-crystal"},
+	"category": "units"
+}

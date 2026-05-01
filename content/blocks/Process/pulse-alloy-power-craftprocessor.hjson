@@ -1,0 +1,47 @@
+{
+  "type": "GenericCrafter",
+  "name": "脉冲合金激发合成厂",
+  "description": "通过精密的工业合成技术把金属经反应后锻造成活性合金基板，消耗大量电磁线圈进行重锻并灌注大量电力合成脉冲合金。",
+  "size": 5,
+  "health": 2500,
+  "armor": 10.0,
+  "itemCapacity": 100,
+  "craftTime": 150,
+  "consumes": {
+    "power": {
+      "usage": 20.0
+    },
+    "items": [
+      "aluminum-alloy/2",
+      "copper/4",
+      "silicon/3"
+      "electromagnetic-coil/5",
+      "titanium-alloy/3"
+    ]
+  },
+  "outputItem": "pulse-alloy/7",
+  "requirements": [
+    "copper/800",
+    "lead/600",
+    "silicon/500",
+    "titanium-alloy/1400",
+    "electromagnetic-coil/300",
+    "carbon-fiber/80"
+    "surge-alloy/400",
+    "reinforced-glass/300"
+  ],
+  "category": "crafting",
+  "research": "carbon-fiber-weaver",
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      "DrawDefault",
+      {
+        "type": "DrawRegion",
+        "suffix": "-top"
+      }
+    ]
+  },
+  "ambientSound": "smelter",
+  "ambientSoundVolume": 0.5
+}

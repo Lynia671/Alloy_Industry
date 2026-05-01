@@ -1,0 +1,37 @@
+{
+	"type": "Drill",
+	"name": "机械钻井",
+	"description": "机械钻头Plus",
+	"size": 3,
+	"health": 600,
+	"armor": 5.0,
+	"itemCapacity": 40,
+	"tier": 3,
+	"drillTime": 58,
+	"requirements": [
+		"copper/35",
+		"lead/15",
+		"graphite/2"
+	],
+	"category": "production",
+	"research": "core-protect",
+	"ambientSound": "loopDrill",
+	"ambientSoundVolume": 0.8,
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			"DrawDefault",
+			{
+				"type": "DrawRegion",
+				"suffix": "-rotator",
+				"spinSpeed": 5.0
+			},
+			{
+				"type": "DrawGlowRegion",
+				"color": "A8C8E0",
+				"alpha": 0.4,
+				"bumpScale": 0.8
+			}
+		]
+	}
+}

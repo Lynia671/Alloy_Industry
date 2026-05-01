@@ -1,0 +1,43 @@
+{
+	"name": "泽塔",
+	"description": "第三代核心机，保护晶勤核心。集成先进能源系统，装甲采用分散式缓冲层，提高护甲强度，但由于占比较大，[red]护甲一旦失效将失去自保能力。"
+    "health": 1200,
+	"armor": 16,
+	"speed": 3.3,
+	"drag": 0.12,
+	"mass": 22,
+	"engineSize": 0,
+	"engineOffset": 0,
+	"itemCapacity": 300,
+	"mineSpeed": 5.0,
+	"mineTier": 5,
+	"buildSpeed": 3.5,
+	"payLoadCapacity": 0,
+	"flying": true,
+	"lowAltitude": true,
+	"weapons": [
+    {
+      "name": "zeta-weapon",
+      "reload": 5,
+      "range": 50,
+      "alternate": true,
+      "shootSound": "machineGun",
+      "shootCone": 5,
+      "recoil": 1.2,
+      "bullets": [
+        {
+          "type": "BasicBulletType",
+          "damage": 85,
+          "speed": 10,
+          "lifetime": 60,
+          "width": 9,
+          "height": 11,
+          "hitEffect": "hitBulletSmall",
+          "despawnEffect": "hitSmallExplosion"
+        }
+      ]
+    }
+  ],
+	"category": "core",
+	"alwaysUnlocked": true
+}

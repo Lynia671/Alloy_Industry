@@ -1,0 +1,41 @@
+{
+	"type": "GenericCrafter",
+	"name": "锎-252合成器",
+	"size": 2,
+	"health": 2000,
+	"armor": 10.0,
+	"itemCapacity": 100,
+	"craftTime": 190,
+	"consumes": {
+		"power": {
+			"usage": 15.0
+		},
+		"items": [
+			{
+				"item": "thorium",
+				"amount": 5
+            },
+            {
+                "item": "graphite"
+                "amount": 6
+            }
+		]
+	},
+	"outputItem": "californium-252/2",
+	"requirements": [
+		"titanium-alloy/400",
+		"electromagnetic-coil/500",
+		"plastanium/300",
+		"thorium/200"
+	],
+	"category": "crafting",
+	"research": "uranium-235-craftor",
+	"ambientSound": "loopSmelter",
+	"ambientSoundVolume": 0.5,
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			"DrawDefault",
+		]
+	}
+}

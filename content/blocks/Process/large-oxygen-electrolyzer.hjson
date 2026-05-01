@@ -1,0 +1,50 @@
+{
+	"type": "GenericCrafter",
+	"name": "大型电解氧提取机",
+	"outputLiquid": "oxygen/2",
+	"size": 3,
+	"hasPower": true,
+	"hasLiquids": true,
+	"hasItems": false,
+	"health": 1100,
+	"craftTime": 40,
+	"liquidCapacity": 80,
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			"DrawDefault",
+			{
+				"type": "DrawRegion",
+				"suffix": "-rotator",
+				"rotationSpeed": 3
+			}
+		]
+	},
+	"craftEffect": {
+		"type": "ParticleEffect",
+		"particles": 10,
+		"baseLength": 2,
+		"length": 15,
+		"lifetime": 30,
+		"sizeFrom": 4,
+		"sizeTo": 0,
+		"colorFrom": "B0E0F580",
+		"colorTo": "FFFFFF",
+		"cone": 360
+	},
+	"consumes": {
+		"power": 6.5,
+		"liquid": "water/2.75"
+	},
+	"requirements": [
+		"copper/140",
+		"lead/110",
+		"silicon/90",
+		"titanium/70",
+		"electromagnetic-coil/25"
+	],
+	"category": "crafting",
+	"ambientSound": "loopElectric",
+	"ambientSoundVolume": 0.7,
+	"research": "electromagnetic-coil-shaper"
+}

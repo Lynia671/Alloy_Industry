@@ -1,0 +1,20 @@
+{
+	"type":"UnitAssemblerModule",
+	"name":"构建中心MK3升级模块",
+	"category":"units",
+	"health":4200,
+	"size":4,
+	"tier":3,
+	"consumes":{
+	"power":10
+	},
+	"research":{"parent":"gunship-assembler"
+    },
+	"requirements":[
+		"titanium-alloy/2800",
+		"reinforced-glass/1400",
+		"electromagnetic-coil/2100",
+		"aluminum-alloy/3300",
+		"pulse-alloy/1020"
+	]
+}

@@ -1,0 +1,70 @@
+{
+	"type": "GenericCrafter",
+	"name": "电解金属还原器",
+	"outputItem": "aluminum/2",
+	"size": 3,
+	"hasPower": true,
+	"hasLiquids": false,
+	"hasItems": true,
+	
+	"health": 1000,
+	"craftTime": 90,
+	"itemCapacity": 30,
+	
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			"DrawDefault",
+			{
+				"type": "DrawGlowRegion",
+				"color": "E0F0FF",
+				"alpha": 0.8,
+				"bumpScale": 1.0
+			},
+			{
+				"type": "DrawFlame",
+				"flameColor": "B0E0F5"
+			}
+		]
+	},
+	
+	"craftEffect": {
+		"type": "ParticleEffect",
+		"particles": 8,
+		"baseLength": 3,
+		"length": 20,
+		"lifetime": 30,
+		"sizeFrom": 6,
+		"sizeTo": 0,
+		"colorFrom": "B0E0F580",
+		"colorTo": "FFFFFF",
+		"cone": 360
+	},
+	
+	"consumes": {
+		"power": 9.25,
+
+		"items": {
+			"items": [
+				"alumina/4",
+				"graphite/1"
+			]
+
+		}
+	},
+	
+	"requirements": [
+		"copper/150",
+		"lead/120",
+		"silicon/100",
+		"titanium/80",
+		"metaglass/50",
+		"electromagnetic-coil/30"
+	],
+	
+	"category": "crafting",
+	"ambientSound": "loopElectric",
+	"ambientSoundVolume": 0.8,
+	
+	"research": "alumina-displacer"
+}

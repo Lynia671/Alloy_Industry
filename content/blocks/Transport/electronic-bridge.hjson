@@ -1,0 +1,35 @@
+{
+	"type": "BridgeConveyor",
+	"name": "电磁物品桥",
+	"description": "利用电磁悬浮技术跨越地形运输物品的高速桥梁。[cyan]传输效率极高，可跨越复杂地形。",
+	"size": 1,
+	"speed": 3.0,
+	"displayedSpeed": 60,
+	"health": 350,
+	"armor": 10.0,
+	"range": 12,
+	"requirements": [
+		"aluminum-alloy/5",
+		"electromagnetic-coil/3",
+		"silicon/6",
+		"carbon-fiber/3",
+		"reinforced-glass/3",
+		"thorium/2"
+	],
+	"category": "distribution",
+	"research": "electronic-conveyor",
+	"insulated": true,
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			"DrawDefault",
+			{
+				"type": "DrawPhaseField",
+				"color": "00FFFF50"
+			}
+		]
+	},
+	"ambientSound": "loopConveyor",
+	"ambientSoundVolume": 0.05,
+	"buildCostMultiplier": 2.0
+}

@@ -1,0 +1,14 @@
+{
+	"type": "Wall",
+	"name": "脉冲合金收容块",
+	"description": "这是用来造单位的!不是造防线!",
+	"size": 3,
+	"health": 35820,
+    "armor": 80,
+	"requirements": [
+		"pulse-alloy/184" 
+	],
+	"category": "defense",
+	"research": "reinforced-alti-alloy-wall",
+	"buildCostMultiplier": 0.5,
+}

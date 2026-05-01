@@ -1,0 +1,41 @@
+{
+  "type": "GenericCrafter",
+  "name": "graphite-pulse-compressor",
+  "localizedName": "石墨脉冲压缩机",
+  "description": "利用高频脉冲电弧瞬间压缩煤炭生成石墨。[orange]产出速度极快，需稳定电力支持。",
+  "size": 3,
+  "health": 450,
+  "armor": 4.0,
+  "itemCapacity": 60,
+  "craftTime": 12,
+  "consumes": {
+    "power": {
+      "usage": 4.0
+    },
+    "items": [
+      {
+        "item": "coal",
+        "amount": 1
+      }
+    ]
+  },
+  "outputItem": "graphite/7",
+  "requirements": [
+    "copper/150",
+    "titanium-alloy/100",
+    "graphite/80",
+    "pulse-alloy/5",
+    "silicon/60",
+    "electromagnetic-coil/40"
+  ],
+  "category": "crafting",
+  "research": "graphite-press",
+  "ambientSound": "loopMachine",
+  "ambientSoundVolume": 0.15,
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      "DrawDefault"
+    ]
+  }
+}

@@ -1,0 +1,81 @@
+{
+	"type": "ConsumeGenerator",
+	"name": "大型蒸汽涡轮发电机",
+	"description": "通过燃烧可燃物加热水产生高压蒸汽，驱动大型涡轮发电。效率极高，但需要持续的水源和燃料供应。",
+	"size": 5,
+	"health": 1200,
+	"itemCapacity": 100,
+	"liquidCapacity": 200,
+	"powerProduction": 875.0,
+	"itemDuration": 60.0,
+	"hasItems": true,
+	"hasLiquids": true,
+	"consumes": {
+		"items": [
+			{
+				"type": "ConsumeItemFlammable",
+				"itemDurationMultipliers": {
+					"pyratite": 3.0,
+					"blast-compound": 4.0
+				}
+			}
+		],
+		"liquid": {
+			"liquid": "water",
+			"amount": 2.5
+		}
+	},
+	"requirements": [
+		"copper/1500",
+		"lead/1200",
+		"titanium/800",
+		"graphite/600",
+		"silicon/500",
+		"metaglass/400"
+	],
+	"category": "power",
+	"research": "polar-wind-turbine",
+	"buildTime": 1200.0,
+	"ambientSound": "loopSteamTurbine",
+	"ambientSoundVolume": 0.15,
+	"generateEffect": "generatespark",
+	"effectChance": 0.02,
+	"lightRadius": 80.0,
+	"emitLight": true,
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			"DrawDefault"/*,
+			{
+				"type": "DrawWarmupRegion",
+				"region": "large-steam-turbine-top"
+			},
+			{
+				"type": "DrawRegion",
+				"region": "large-steam-turbine-turbine",
+				"rotateSpeed": 1.5,
+				"suffix": "-turbine"
+			},
+			{
+				"type": "DrawRegion",
+				"region": "large-steam-turbine-turbine",
+				"rotateSpeed": -1.5,
+				"rotation": 45.0,
+				"suffix": "-turbine"
+			},
+			{
+				"type": "DrawRegion",
+				"region": "large-steam-turbine-cap",
+				"suffix": "-cap"
+			},
+			{
+				"type": "DrawLiquidRegion",
+				"liquid": "water",
+				"padLeft": 1.0,
+				"padRight": 1.0,
+				"padTop": 1.0,
+				"padBottom": 1.0
+			}*/
+		]
+	}
+}

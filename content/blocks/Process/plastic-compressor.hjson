@@ -1,0 +1,42 @@
+{
+  "type": "GenericCrafter",
+  "name": "塑料合成机",
+  "description": "使用石油和电力生产塑料。",
+  "size": 4,
+  "health": 420,
+  "armor": 6.0,
+  "itemCapacity": 30,
+  "liquidCapacity": 80,
+  "craftTime": 60,
+  "consumes": {
+    "power": {
+      "usage": 3.0
+    },
+    "liquid": {
+      "liquid": "oil",
+      "amount": 0.1667
+    }
+  },
+  "outputItem": "plastic/6",
+  "requirements": [
+    "copper/90",
+    "lead/70",
+    "titanium-alloy/50"
+  ],
+  "category": "crafting",
+  "research": "titanium-alloy-smelter",
+  "buildVisibility": "shown",
+  "planet": "serpulo",
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      "DrawDefault",
+      {
+        "type": "DrawRegion",
+        "suffix": "-top"
+      }
+    ]
+  },
+  "ambientSound": "machine",
+  "ambientSoundVolume": 0.4
+}

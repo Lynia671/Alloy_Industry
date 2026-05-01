@@ -1,0 +1,15 @@
+{
+    "requirements": [
+        "titanium-alloy/200",
+        "silicon/50",
+        "plastanium/15",
+        "aluminum-alloy/10"
+    ],
+    "type": "StorageBlock",
+    "name": "重荷仓库",
+    "size": 3,
+    "health": 2800,
+    "itemCapacity": 3000,
+    "research": "core-rally"
+    "category": "effect"
+}

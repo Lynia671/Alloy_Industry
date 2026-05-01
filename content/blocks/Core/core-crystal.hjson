@@ -1,0 +1,21 @@
+{
+	"type": "CoreBlock",
+	"name": "晶勤核心",
+	"description": "第三代核心。采用晶体强化结构，显著提升防御力和存储容量。[lightgray]可以被更高级的核心覆盖升级。",
+	"size": 4,
+	"health": 18000,
+	"armor": 9.0,
+	"itemCapacity": 16000,
+	"unitCapModifier": 11,
+	"unitType": "zeta",
+	"requirements": [
+		"copper/4400",
+		"lead/3000",
+		"titanium-alloy/2500",
+		"silicon/1200",
+		"graphite/1600",
+		"metaglass/475"
+	],
+	"category": "effect",
+	"research": "core-rally"
+}

@@ -1,0 +1,24 @@
+{
+	"type": "CoreBlock",
+	"name": "鹤泰核心",
+	"description": "第四代核心。配备先进防御系统，能抵抗高强度攻击。[lightgray]可以被更高级的核心覆盖升级。",
+	"size": 5,
+	"health": 25000,
+	"armor": 10.0,
+	"itemCapacity": 20000,
+	"unitCapModifier": 14,
+	"unitType": "eta",
+	"team": "sharded",
+	"coreZoneBuildable": true,
+	"requirements": [
+		"copper/1300",
+		"lead/1100",
+		"titanium-alloy/4500",
+		"aluminum-alloy/2100",
+		"silicon/3000",
+		"reinforced-glass/1200",
+		"carbon-fiber/2600"
+	],
+	"category": "effect",
+	"research": "core-crystal"
+}

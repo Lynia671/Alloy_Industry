@@ -1,0 +1,29 @@
+{
+	"name": "聚能穹顶超频投射器",
+	"description": "[red]核心数据库数据异常丢失！请进行检查斯维特顿核心中央数据库！",
+	"type": "OverdriveProjector",
+	"health": 21480,
+	"size": 6,
+	"range": 403.17,
+	"phaseRangeBoost": 45,
+	"speedBoostPhase": 1,
+	"speedBoost": 7.20,
+	"hasBoost": true,
+	"useTime": 60,
+	"consumes": {
+		"power": 47.7,
+	},
+	"requirements": [
+    "copper/2400",
+    "lead/1800",
+    "silicon/2750",
+    "electromagnetic-coil/5160",
+    "titanium-alloy/4350",
+    "aluminum-alloy/1800",
+    "thorium/1800",
+    "pulse-alloy/3705"
+    "reinforced-glass/1100"
+	],
+	"category": "effect",
+	"research": "inoverdriver-dome"
+}

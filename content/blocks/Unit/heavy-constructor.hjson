@@ -1,0 +1,26 @@
+{
+	"type": "Constructor",
+	"name": "重型载荷打印平台",
+	"health": 1800,
+	"minBlockSize": 2,
+	"maxBlockSize": 6,
+	"size": 7,
+	"buildSpeed": 12,
+	"liquidCapacity": 30,
+	"filter":["californium-fission-stack"],
+	"consumes": {
+		"power": 16
+	},
+	"requirements": [
+		"silicon/920",
+		"aluminum-alloy/2150",
+		"titanium/3100",
+		"thorium/1850",
+		"electromagnetic-coil/1900",
+		"pulse-alloy/90"
+	],
+	"category": "units",
+	"research": {
+		"parent": "gunship-assembler"
+	}
+}

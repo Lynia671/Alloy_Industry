@@ -1,0 +1,50 @@
+{
+	"type": "GenericCrafter",
+	"name": "大型电解氢提取机",
+	"outputLiquid": "hydrogen/3",
+	"size": 3,
+	"hasPower": true,
+	"hasLiquids": true,
+	"hasItems": false,
+	"health": 1100,
+	"craftTime": 45,
+	"liquidCapacity": 80,
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			"DrawDefault",
+			{
+				"type": "DrawRegion",
+				"suffix": "-turbine",
+				"rotationSpeed": 5
+			}
+		]
+	},
+	"craftEffect": {
+		"type": "ParticleEffect",
+		"particles": 12,
+		"baseLength": 2,
+		"length": 18,
+		"lifetime": 25,
+		"sizeFrom": 3,
+		"sizeTo": 0,
+		"colorFrom": "87CEEB80",
+		"colorTo": "E0FFFF",
+		"cone": 360
+	},
+	"consumes": {
+		"power": 7.0,
+		"liquid": "water/3.4"
+	},
+	"requirements": [
+		"copper/140",
+		"lead/110",
+		"silicon/90",
+		"titanium/70",
+		"electromagnetic-coil/25"
+	],
+	"category": "crafting",
+	"ambientSound": "loopElectric",
+	"ambientSoundVolume": 0.75,
+	"research": "electromagnetic-coil-shaper"
+}

@@ -1,0 +1,50 @@
+{
+	"type": "CoreBlock",
+	"name": "末代核心",
+	"description": "第五代核心",
+	"size": 6,
+	"armor": 12.0,
+	"health": 45000,
+	"itemCapacity": 30000,
+	"unitCapModifier": 20,
+	"unitType": "theta",
+	"requirements": [
+		"copper/3500",
+		"reinforced-glass/1800",
+		"lead/2200",
+		"titanium-alloy/5000",
+		"silicon/3800",
+		"aluminum-alloy/1600",
+		"graphite/400",
+		"thorium/1200"
+	],
+	"category": "effect",
+	"research": "core-zenith",
+	"alwaysUnlocked": true
+}
+
+
+/*
+{
+	"type": "Core",
+	"name": "末代核心",
+	"size": 5,
+	"armor": 12.0,
+	"health": 25000,
+	"itemCapacity": 30000,
+	"unitCapModifier": 20,
+	"defaultUnit": "gamma",
+	"requirements": [
+		"copper/1500",
+		"lead/1200",
+		"titanium-alloy/2000",
+		"silicon/3800",
+		"aluminum-alloy/600",
+		"graphite/400",
+		"thorium/1200"
+	],
+	"category": "effect",
+	"research": "core-nucleus",
+	"alwaysUnlocked": true,
+}
+*/

@@ -1,0 +1,35 @@
+{
+    "type": "GenericCrafter",
+    "name": "电磁合金冶炼炉",
+    "description": "电↑磁↓技↑术↑",
+    "requirements": [ "copper/160", "lead/450", "silicon/185", "titanium-alloy/140", "graphite/230", "electromagnetic-coil/600" ],
+    "category": "crafting",
+    "size": 3,
+    "health": 360,
+    "craftTime": 60,
+    "itemCapacity": 30,
+    "outputItem": "surge-alloy/2",
+    "consumes": {
+        "power": 4.5,
+        "items": [
+            "copper/3",
+            "lead/3",
+            "titanium/2",
+            "silicon/5"
+        ]
+    },
+    "drawer": {
+        "type": "DrawMulti",
+        "drawers": [
+            { "type": "DrawDefault" },
+            { "type": "DrawGlowRegion", "color": "#f3e979", "glowScale": 7.0, "glowIntensity": 0.6 },
+            { "type": "DrawParticles", "color": "#f3e979", "alpha": 0.8, "particleSize": 2.8, "particles": 12, "particleRad": 14.0, "particleLife": 140.0 }
+        ]
+    },
+    "research": "aluminum-alloy-smelter",
+    "ambientSound": "loopSmelter",
+    "ambientSoundVolume": 0.085,
+    "craftEffect": "smeltsmoke",
+    "updateEffect": "none",
+    "warmupSpeed": 0.02
+}

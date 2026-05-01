@@ -1,0 +1,37 @@
+{
+	"type": "Wall",
+	"name": "蜂窝煤压块墙",
+	"description": "别看它本身燃料,但它是经过压实后而成，这意味着不太易于着火。因此你可以放心的在战场上使用，[red]但由于其本质是燃料，被摧毁时会发生剧烈燃烧甚至小型爆炸，对周围造成火焰伤害。请勿在重要设施旁使用。",
+	"size": 1,
+	"health": 550,
+	"armor": 3.0,
+	"requirements": [
+		"honeycomb-coal/6" 
+	],
+	"category": "defense",
+	"research": "copper-lead-wall",
+	"flammability": 0.8,
+	"hitEffect": {
+		"type": "ParticleEffect",
+		"particles": 5,
+		"baseLength": 2,
+		"length": 8,
+		"lifetime": 15,
+		"sizeFrom": 3,
+		"sizeTo": 0,
+		"colorFrom": "FFA500AA", 
+		"colorTo": "FF450000",
+		"interp": "pow10Out"
+	},
+	
+	"destroyEffect": {
+		"type": "ExplosionEffect",
+		"radius": 15,
+		"colorFrom": "FF4500",
+		"colorTo": "FFFF00",
+		"sparkCone": 180,
+		"sparkLen": 30,
+		"smokeColor": "333333",
+		"damage": 20 
+	},
+}

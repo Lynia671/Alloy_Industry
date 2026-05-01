@@ -1,0 +1,15 @@
+{
+	"name": "纳米重组液",
+	"type": "liquid",
+	"color": "76D081",
+	"temperature": 0.15,
+	"viscosity": 0.4,
+	"heatCapacity": 2.5,
+	"gasTemperature": 0.0,
+	"flammability": 0,
+	"explosiveness": 0,
+	"radioactivity": 0.2,
+	"barrier": false,
+	"lightColor": "98FB98",
+	"research": "纳米粒"
+}

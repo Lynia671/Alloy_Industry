@@ -1,0 +1,14 @@
+{
+	"type": "Wall",
+	"name": "大型钢化玻璃墙",
+	"description": "由强化钢化玻璃作为核心，外部包裹钛合金框架，极高的护甲值能有效偏转轻型武器的攻击，只有重型火力才能对其造成实质性伤害。透明的视野让防守无死角。",
+	"size": 2,
+	"health": 1250,
+	"armor": 18.0,
+	"requirements": [
+		"reinforced-glass/20",
+		"titanium-alloy/12"
+	],
+	"category": "defense",
+	"research": "titanium-wall",
+}

@@ -1,0 +1,108 @@
+{
+	"type": "NuclearReactor",
+	"name": "钠化学堆",
+	"description": "利用钠化学反应产生的能量发电。[red]冷却失效将发生剧烈爆炸，冷却系统中灌入水将引发灾难性爆炸[white]！",
+	"size": 3,
+	"health": 850,
+	"armor": 8.0,
+	"fuelItem":"sodium",
+	"itemCapacity": 50,
+	"liquidCapacity": 100,
+	"powerProduction": 45.0,
+	"itemDuration": 300,
+	"heating": 0.025,
+	"coolantPower": 0.05,
+	"explosiveness": 1.0,
+	"consumes": {
+		"items": [
+			{
+				"item": "sodium",
+				"amount": 1
+			}
+		],
+		"liquid": {
+			"liquid": "cryofluid",
+			"amount": 0.6
+		}
+	},
+	"requirements": [
+		"lead/400",
+		"silicon/300",
+		"graphite/200",
+		"thorium/150",
+		"sodium/200",
+		"aluminum-alloy/100"
+	],
+	"category": "power",
+	"research": "overclocked-co-generator",
+	"ambientSound": "loopReactor",
+	"ambientSoundVolume": 0.9,
+	"lightColor": "B0C4DE",
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			"DrawDefault"// 显示贴图
+		]
+	}
+}
+
+/*
+{
+	"type": "NuclearReactor",
+	"name": "钠化学堆",
+	"description": "利用钠化学反应产生的能发电。[red]冷却失效将发生剧烈爆炸，冷却系统中灌入水将引发灾难性爆炸[white]！",
+	"size": 3,
+	"health": 850,
+	"armor": 8.0,
+	"itemCapacity": 50,
+	"liquidCapacity": 100,
+	"powerProduction": 45.0,
+	"itemDuration": 300,
+	"heating": 0.025,
+	"coolantPower": 0.05,
+	"explosiveness": 1.0,
+	"consumes": {
+		"items": [
+			{
+				"item": "sodium",
+				"amount": 1
+			}
+		],
+		"liquid": {
+			"liquid": "cryofluid",
+			"amount": 0.6,
+			"update": false
+		}
+	},
+	"requirements": [
+		"lead/400",
+		"silicon/300",
+		"graphite/200",
+		"thorium/150",
+		"sodium/200",
+		"aluminum-alloy/100"
+	],
+	"category": "power",
+	"research": "thorium-reactor",
+	"ambientSound": "loopReactor",
+	"ambientSoundVolume": 0.9,
+	"lightColor": "B0C4DE",
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			"DrawDefault",
+			{
+				"type": "DrawLiquidTile",
+				"drawLiquid": "water",
+				"alpha": 0.4
+			},
+			{
+				"type": "DrawGlowRegion",
+				"color": "B0C4DE",
+				"alpha": 0.6,
+				"bumpScale": 1.2
+			}
+		]
+	}
+}
+*/

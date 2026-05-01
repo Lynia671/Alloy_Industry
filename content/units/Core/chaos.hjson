@@ -1,0 +1,61 @@
+{
+	"name": "创灭",
+	"description": "守护天穹核心。搭载强力的武器和自卫系统。[red]能够独立摧毁一座中型基地基地。",
+	"health": 8000,
+	"armor": 45,
+	"shieldHealth": 5000,
+	"shieldRadius": 15,
+	"shieldRecharge": 120,
+	"speed": 4.2,
+	"drag": 0.1,
+	"mass": 60,
+	"engineSize": 0,
+	"engineOffset": 0,
+	"itemCapacity": 1000,
+	"mineSpeed": 8.0,
+	"mineTier": 10,
+	"buildSpeed": 8,
+	"payLoadCapacity": 0,
+	"flying": true,
+	"lowAltitude": true,
+	"hitSize": 12,
+	"rotateSpeed": 5,
+	"immunities": [
+		"burning",
+		"freezing",
+		"electrified"
+	],
+  "weapons": [
+    {
+      "name": "chaos-weapon",
+      "reload": 2,
+      "range": 80,
+      "alternate": true,
+      "shootSound": "laser",
+      "shootCone": 0,
+      "recoil": 3,
+      "bullets": [
+        {
+          "type": "LaserBulletType",
+          "damage": 350,
+          "speed": 15,
+          "lifetime": 60,
+          "width": 15,
+          "height": 20,
+          "colors": {
+            "from": "FFFFFF",
+            "to": "FF0000"
+          },
+          "lightning": 3,
+          "lightningDamage": 100,
+          "lightningColor": "FFA500",
+          "shockEffect": "sparkHit",
+          "hitEffect": "hitSmallExplosion",
+          "despawnEffect": "hitSmallExplosion"
+        }
+      ]
+    }
+  ],
+	"category": "core",
+	"alwaysUnlocked": true
+}

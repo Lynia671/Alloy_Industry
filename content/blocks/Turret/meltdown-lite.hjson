@@ -1,0 +1,84 @@
+{
+	"type": "PowerTurret",
+	"name": "熔解",
+	"description": "实验性小型激光炮台。利用聚焦透镜产生高温光束，能持续灼烧单一目标。由于散热系统简陋且能量聚焦不稳定，射程极短且极易过热，后摇极大。是前期对抗重甲单位的无奈之选。",
+	"health": 450,
+	"size": 3,
+	"reload": 60,
+	"range": 150,
+	"maxAmmo": 20,
+	"recoil": 0.5,
+	"recoilTime": 10,
+	"shake": 0.5,
+	"inaccuracy": 1,
+	"rotateSpeed": 20,
+	"shoot": {
+		"type": "ShootSingle"
+	},
+	"consumes": {
+		"power": 3.5,
+		"coolant": {
+			"amount": 0.1,
+			"optional": true
+		}
+	},
+	"shootType": {
+		"type": "ContinuousLaserBulletType",
+		"damage": 42,
+		"length": 90,
+		"width": 3.5,
+		"colors": [
+			"FF4500",
+			"FFA500",
+			"FFFF00",
+			"FFFFFF"
+		],
+		"hitEffect": {
+			"type": "MultiEffect",
+			"effects": [
+				"hitLancer",
+				{
+					"type": "ParticleEffect",
+					"particles": 3,
+					"sizeFrom": 2,
+					"sizeTo": 0,
+					"length": 5,
+					"lifetime": 10,
+					"colorFrom": "FF4500",
+					"colorTo": "FFA500"
+				}
+			]
+		},
+		"despawnEffect": "hitLancer",
+		"shootEffect": {
+			"type": "MultiEffect",
+			"effects": [
+				"shootBig",
+				{
+					"type": "WaveEffect",
+					"lifetime": 4,
+					"sizeFrom": 0,
+					"sizeTo": 4,
+					"strokeFrom": 1,
+					"strokeTo": 0,
+					"colorFrom": "FFFFFF",
+					"colorTo": "FF4500"
+				}
+			]
+		},
+		"status": "burning",
+		"statusDuration": 120,
+		"piercing": false,
+		"incendAmount": 1
+	},
+	"requirements": [
+		"copper/80",
+		"lead/60",
+		"graphite/40",
+        "metaglass/2"
+	],
+	"category": "turret",
+	"research": "arc-disruptor",
+	"ambientSound": "laser",
+	"ambientSoundVolume": 0.4
+}

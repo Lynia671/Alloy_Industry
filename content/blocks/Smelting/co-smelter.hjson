@@ -1,0 +1,60 @@
+{
+	"type": "GenericCrafter",
+	"name": "一氧化碳合成机",
+	"outputItem": "zip-carbon-monoxide/12",
+	"size": 3,
+	"hasPower": true,
+	"hasLiquids": true,
+	"hasItems": true,
+	"health": 700,
+	"craftTime": 40,
+	"itemCapacity": 20,
+	"liquidCapacity": 50,
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			"DrawDefault",
+			{
+				"type": "DrawFlame",
+				"flameColor": "8B4513"
+			},
+			{
+				"type": "DrawGlowRegion",
+				"color": "A9A9A9",
+				"alpha": 0.6,
+				"bumpScale": 0.8
+			}
+		]
+	},
+	"craftEffect": {
+		"type": "ParticleEffect",
+		"particles": 6,
+		"baseLength": 2,
+		"length": 15,
+		"lifetime": 25,
+		"sizeFrom": 5,
+		"sizeTo": 0,
+		"colorFrom": "8B451380",
+		"colorTo": "A9A9A9",
+		"cone": 45
+	},
+	"consumes": {
+		"power": 3.5,
+		"items": {
+			"items": [
+				"coal/2"
+			]
+		},
+		"liquid": "oxygen/5"
+	},
+	"requirements": [
+		"copper/100",
+		"lead/80",
+		"silicon/60",
+		"graphite/30"
+	],
+	"category": "crafting",
+	"ambientSound": "loopMachine",
+	"ambientSoundVolume": 0.65,
+	"research": "large-oxygen-electrolyzer"
+}

@@ -1,0 +1,14 @@
+{
+	"type": "Wall",
+	"name": "塑料墙",
+	"description": "造价低廉，建造速度极快，适合前期快速搭建防线或隔离区。但耐热性极差，遇到火焰攻击会迅速软化甚至燃烧且无法有效抵御敌人的进攻。",
+	"size": 1,
+	"health": 180,
+	"requirements": [
+		"plastic/4" 
+	],
+	"category": "defense",
+	"research": "copper-lead-wall",
+	"buildCostMultiplier": 0.5,
+	"flammability": 10,
+}

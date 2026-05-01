@@ -1,0 +1,42 @@
+{
+  "type": "GenericCrafter",
+  "name": "电磁石墨冲压机",
+  "description": "利用电磁脉冲高压压缩煤炭，高效生产石墨。",
+  "size": 3,
+  "health": 800,
+  "armor": 4.0,
+  "itemCapacity": 50,
+  "craftTime": 80,
+  "consumes": {
+    "power": {
+      "usage": 11.75
+    },
+    "items": [
+      "coal/7"
+    ]
+  },
+  "outputItem": "graphite/8",
+  "requirements": [
+    "copper/150",
+    "lead/120",
+    "silicon/100",
+    "graphite/80",
+    "titanium-alloy/140",
+    "aluminum-alloy/85"
+    "reinforced-glass/60"
+  ],
+  "category": "crafting",
+  "research": "coke-furnace",
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      "DrawDefault",
+      {
+        "type": "DrawRegion",
+        "suffix": "-top"
+      }
+    ]
+  },
+  "ambientSound": "press",
+  "ambientSoundVolume": 0.4
+}

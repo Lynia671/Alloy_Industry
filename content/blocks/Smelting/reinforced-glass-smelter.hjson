@@ -1,0 +1,60 @@
+{
+	"type": "GenericCrafter",
+	"name": "钢化玻璃冶炼炉",
+	"outputItem": "reinforced-glass/3",
+	"size": 3,
+	"hasPower": true,
+	"hasLiquids": false,
+	"hasItems": true,
+	"health": 1200,
+	"craftTime": 80,
+	"itemCapacity": 20,
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			"DrawDefault",
+			{
+				"type": "DrawFlame",
+				"flameColor": "76D081"
+			},
+			{
+				"type": "DrawGlowRegion",
+				"color": "98FB98",
+				"alpha": 0.5
+			}
+		]
+	},
+	"craftEffect": {
+		"type": "ParticleEffect",
+		"particles": 5,
+		"baseLength": 3,
+		"length": 18,
+		"lifetime": 25,
+		"sizeFrom": 8,
+		"sizeTo": 0,
+		"colorFrom": "76D08180",
+		"colorTo": "FFFFFF"
+	},
+	"consumes": {
+		"power": 5.5,
+		"items": {
+			"items": [
+				"metaglass/4",
+				"carbon-fiber/1",
+				"graphite/2"
+			]
+		}
+	},
+	"requirements": [
+		"copper/150",
+		"lead/100",
+		"silicon/80",
+        "metaglass/25"
+		"titanium-alloy/60",
+		"carbon-fiber/30"
+	],
+	"category": "crafting",
+	"ambientSound": "loopSmelter",
+	"ambientSoundVolume": 0.7,
+	"research": "carbon-fiber-weaver"
+}

@@ -1,0 +1,163 @@
+{
+	"type": "Drill",
+	"name": "旋压钻头",
+	"description": "采用高密度钛合金打造的超巨型旋压钻探平台。内置蒸汽加热循环系统，必须通过管道持续输入高温蒸汽以维持电机运转。若蒸汽供应中断，钻头将在缓存耗尽后因极寒迅速冻结停机，[red]反复冻结可能导致磁电机的复合轴承断裂。",
+	"size": 4,
+	"tier": 5,
+	"drillTime": 110,
+	"liquidBoostIntensity": 2.0,
+	"health": 1200,
+	"armor": 12.0,
+	"consumes": {
+		"power": 2.5,
+		"liquid": {
+			"liquid": "steam",
+			"amount": 0.1,
+			"boost": true
+		}
+	},
+	"requirements": [
+		"titanium-alloy/60",
+		"silicon/50",
+		"lead/40",
+		"electromagnetic-coil/180",
+		"graphite/30"
+	],
+	"category": "production",
+	"research": "large-air-rotate-drill",
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			"DrawDefault",
+			{
+				"type": "DrawRegion",
+				"suffix": "-rotator",
+				"spinSpeed": 50.0
+			},
+			{
+				"type": "DrawGlowRegion",
+				"color": "FFA500",
+				"alpha": 0.6,
+				"bumpScale": 1.0
+			}
+		]
+	},
+	"ambientSound": "loopDrill",
+	"ambientSoundVolume": 0.9
+}
+
+
+/*
+{
+	"type": "LaserDrill",
+	"name": "旋压钻头",
+	"description": "采用高密度钛合金打造的超巨型钻探平台。内置蒸汽加热循环系统，必须通过管道持续输入高温蒸汽以维持电机运转。若蒸汽供应中断，钻头将在缓存耗尽后因极寒迅速冻结停机。",
+	"size": 4,
+	"tier": 5,
+	"drillTime": 4,
+		// ⭐ 只保留 drillTime，删除 baseSpeed
+	"health": 1200,
+	"armor": 12.0,
+	"liquidCapacity": 60,
+	"hasPower": true,
+	"hasLiquids": true,
+	"consumes": {
+		"power": 2.5,
+		"liquid": {
+			"liquid": "water",
+				// ⭐ 先用原版液体，或确保你定义了"steam"
+			"amount": 0.1
+		}
+	},
+	"requirements": [
+		"titanium-alloy/60",
+		"silicon/50",
+		"lead/40",
+		"graphite/30"
+	],
+	"category": "production",
+	"research": "laser-drill",
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			"DrawDefault",
+			{
+				"type": "DrawRegion",
+				"suffix": "-rotator",
+				"spinSpeed": 20.0
+			},
+			{
+				"type": "DrawGlowRegion",
+				"color": "FFA500",
+				"alpha": 0.6,
+				"bumpScale": 1.0
+			},
+			{
+				"type": "DrawLiquidTile",
+					// ⭐ 改成 DrawLiquidTile（原版支持）
+				"drawLiquid": "water",
+				"alpha": 0.5,
+				"padding": 3
+			}
+		]
+	},
+	"ambientSound": "loopDrill",
+	"ambientSoundVolume": 0.9
+}
+*/
+
+/*
+{
+	"type": "AttributeDrill",
+	"name": "旋压钻头",
+	"description": "采用高密度钛合金打造的超巨型旋压钻探平台。内置蒸汽加热循环系统，必须通过管道持续输入高温蒸汽以维持电机运转。若蒸汽供应中断，钻头将在缓存耗尽后因极寒迅速冻结停机，反复冻结可能导致电机的轴承断裂。",
+	"size": 4,
+	"tier": 5,
+	"baseSpeed": 3,//速度
+	"drillTime": 4,//时间
+	"health": 1200,
+	"armor": 12.0,
+	"liquidCapacity": 60,
+	"requirements": [
+		"titanium-alloy/60",
+		"silicon/50",
+		"lead/40",
+		"graphite/30"
+	],
+	"category": "production",
+	"research": "laser-drill",
+	"consumes": {
+		"power": 2.5,
+		"liquid": {
+			"liquid": "steam",
+			"amount": 0.1
+		}
+	},
+	"attributes": [],
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			"DrawDefault",
+			{
+				"type": "DrawRegion",
+				"suffix": "-rotator",
+				"spinSpeed": 20.0
+			},
+			{
+				"type": "DrawGlowRegion",
+				"color": "FFA500",
+				"alpha": 0.6,
+				"bumpScale": 1.0
+			},
+			{
+				"type": "DrawLiquidRegion",
+				"liquid": "steam",
+				"alpha": 0.5
+			}
+		]
+	},
+	"ambientSound": "loopDrill",
+	"ambientSoundVolume": 0.9,
+	"buildCostMultiplier": 2.0
+}
+*/

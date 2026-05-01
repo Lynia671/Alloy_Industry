@@ -1,0 +1,58 @@
+{
+	"type": "GenericCrafter",
+	"name": "铝金炉",
+	"outputItem": "aluminum-alloy/3",
+	"size": 3,
+	"hasPower": true,
+	"hasLiquids": false,
+	"hasItems": true,
+	"health": 950,
+	"craftTime": 55,
+	"itemCapacity": 25,
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			"DrawDefault",
+			{
+				"type": "DrawFlame",
+				"flameColor": "D4E5F7"
+			},
+			{
+				"type": "DrawGlowRegion",
+				"color": "E8F4FF",
+				"alpha": 0.6
+			}
+		]
+	},
+	"craftEffect": {
+		"type": "ParticleEffect",
+		"particles": 5,
+		"baseLength": 2,
+		"length": 14,
+		"lifetime": 22,
+		"sizeFrom": 7,
+		"sizeTo": 0,
+		"colorFrom": "D4E5F780",
+		"colorTo": "FFFFFF"
+	},
+	"consumes": {
+		"power": 5.5,
+		"items": {
+			"items": [
+				"aluminum/2",
+				"copper/1"
+			]
+		}
+	},
+	"requirements": [
+		"copper/110",
+		"lead/90",
+		"silicon/60",
+		"titanium/50",
+		"electromagnetic-coil/20"
+	],
+	"category": "crafting",
+	"ambientSound": "loopSmelter",
+	"ambientSoundVolume": 0.65,
+	"research": "electric_metal_reducer"
+}

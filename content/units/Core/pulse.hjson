@@ -1,0 +1,29 @@
+{
+	"name": "脉冲",
+	"description": "便携核心的专属建造单位。搭载电磁脉冲建造系统，能够快速部署建筑。[cyan]无法攻击和采矿，专注于建造。",
+	"health": 2000,
+	"armor": 12,
+	"shieldHealth": 500,
+	"shieldRadius": 10,
+	"shieldRecharge": 60,
+	"speed": 3.5,
+	"drag": 0.12,
+	"mass": 12,
+	"engineSize": 0,
+	"engineOffset": 0,
+	"itemCapacity": 300,
+	"mineSpeed": 0,
+	"mineTier": 0,
+	"buildSpeed": 8,
+	"payLoadCapacity": 0,
+	"flying": true,
+	"lowAltitude": true,
+	"hitSize": 9,
+	"rotateSpeed": 6,
+	"immunities": [
+		"electrified",
+		"burning"
+	],
+	"category": "core",
+	"alwaysUnlocked": true
+}

@@ -1,0 +1,59 @@
+{
+	"type": "GenericCrafter",
+	"name": "氯化钠电解机",
+	"description": "通过加热熔融氯化钠并电解，生产钠和氯气。需要持续供应电力和水作为冷却剂。[red]采用一次性电磁加热线圈，需要持续供应电磁线圈！",
+	"size": 2,
+	"health": 600,
+	"armor": 5.0,
+	"itemCapacity": 40,
+	"liquidCapacity": 50,
+	"craftTime": 180,
+	"consumes": {
+		"power": 4.0,
+		"items": [
+			{
+				"item": "electromagnetic-coil",
+				"amount": 1
+			}
+		],
+		"liquid": {
+			"liquid": "water",
+			"amount": 0.435
+		}
+	},
+	"outputItem": {
+		"item": "sodium",
+		"amount": 7
+	},
+	"outputLiquid": {
+		"liquid": "chlorine-gas",
+		"amount": 0.5
+	},
+	"requirements": [
+		"copper/120",
+		"lead/100",
+		"silicon/80",
+		"titanium-alloy/20",
+		"electromagnetic-coil/40",
+		"graphite/50",
+		"metaglass/40"
+	],
+	"category": "crafting",
+	"research": "large-oxygen-electrolyzer",
+	"ambientSound": "loopElectricHum",
+	"ambientSoundVolume": 0.08,
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			"DrawDefault",
+			{
+				"type": "DrawLiquidTile",
+				"drawLiquid": "water",
+				"alpha": 0.3
+			},
+			{
+				"type": "DrawHeatOutput"
+			}
+		]
+	}
+}

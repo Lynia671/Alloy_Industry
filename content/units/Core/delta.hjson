@@ -1,0 +1,43 @@
+{
+	"name": "德尔塔",
+	"description": "第一代核心机，保护坦护核心。",
+	"health": 1100,
+	"armor": 0,
+	"speed": 2.9,
+	"drag": 0.12,
+	"mass": 10,
+	"engineSize": 0,
+	"engineOffset": 0,
+	"itemCapacity": 150,
+	"mineSpeed": 4.0,
+	"mineTier": 3,
+	"buildSpeed": 2.5,
+	"payLoadCapacity": 0,
+	"flying": true,
+	"lowAltitude": true,
+	"weapons": [
+    {
+      "name": "delta-weapon",
+      "reload": 8,
+      "range": 40,
+      "alternate": true,
+      "shootSound": "machineGun",
+      "shootCone": 5,
+      "recoil": 1.0,
+      "bullets": [
+        {
+          "type": "BasicBulletType",
+          "damage": 40,
+          "speed": 8,
+          "lifetime": 60,
+          "width": 7,
+          "height": 9,
+          "hitEffect": "hitBulletSmall",
+          "despawnEffect": "hitSmallExplosion"
+        }
+      ]
+    }
+  ],
+	"category": "core",
+	"alwaysUnlocked": true
+}

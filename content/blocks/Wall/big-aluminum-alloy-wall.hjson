@@ -1,0 +1,20 @@
+{
+  "type": "Wall",
+  "name": "大型铝合金墙",
+  "description": "轻质高强度的铝合金防御墙。[cyan]抗弹性能优异，适合快速部署前线防线。",
+  "size": 3,
+  "health": 4000,
+  "armor": 12.0,
+  "requirements": [
+    "aluminum-alloy/120",
+    "copper/20"
+  ],
+  "category": "defense",
+  "research": "big-titanium-alloy-wall",
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      "DrawDefault"
+    ]
+  }
+}

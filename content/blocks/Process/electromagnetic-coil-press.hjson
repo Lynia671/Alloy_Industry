@@ -1,0 +1,50 @@
+{
+	"type": "GenericCrafter",
+	"name": "电磁线圈冲塑器",
+	"description": "使用高压电磁场将电磁线圈材料冲压成型。",
+	"size": 3,
+	"health": 600,
+	"armor": 5.0,
+	"itemCapacity": 30,
+	"craftTime": 25,
+	"consumes": {
+		"power": 6.75,
+		"items": {
+			"items": [
+				"copper/12",
+				"graphite/7",
+				"silicon/4"
+			]
+		}
+	},
+	"outputItem": {
+		"item": "electromagnetic-coil",
+		"amount": 14
+	},
+	"requirements": [
+		"copper/150",
+		"lead/120",
+		"silicon/80",
+		"titanium/60",
+		"aluminum-alloy/50",
+		"electromagnetic-coil/40",
+		"graphite/30"
+	],
+	"category": "crafting",
+	"research": "electromagnetic-coil-shaper",
+	"ambientSound": "loopMachine",
+	"ambientSoundVolume": 0.06,
+	"craftEffect": "pulverizeMedium",
+	"updateEffect": "pulverizeSmall",
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			"DrawDefault",
+			{
+				"type": "DrawPistons",
+				"sinMag": 2,
+				"sinScl": 5
+			}
+		]
+	}
+}

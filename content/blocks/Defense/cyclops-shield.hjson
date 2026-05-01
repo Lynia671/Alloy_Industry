@@ -1,0 +1,47 @@
+{
+  "type": "ForceProjector",
+  "name": "独眼巨人号护盾发生器",
+  "description": "基于深海迷航独眼巨人号的护盾发生器技术。[cyan]需要大量电力维持运行，[purple]彩蛋建筑。",
+  "size": 5,
+  "health": 5000,
+  "armor": 15.0,
+  "itemCapacity": 80,
+  "liquidCapacity": 100,
+  "shieldHealth": 80000,
+  "radius": 200,
+  "cooldown": 3600,
+  "regen": 20.0,
+  "phaseRadiusBoost": 30,
+  "phaseShieldBoost": 5000,
+  "consumes": {
+    "power": {
+      "usage": 166.67
+    }
+  },
+  "requirements": [
+    "electromagnetic-coil/2500",
+    "titanium-alloy/1800",
+    "reinforced-glass/600",
+    "aluminum-alloy/1500",
+    "carbon-fiber/1200",
+    "reinforced-glass/300"
+  ],
+  "category": "effect",
+  "research": "force-dome",
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      "DrawDefault",
+      {
+        "type": "DrawShieldRegion"
+      },
+      {
+        "type": "DrawGlowRegion",
+        "color": "4DB8FF",
+        "alpha": 0.7
+      }
+    ]
+  },
+  "ambientSound": "loopShield",
+  "ambientSoundVolume": 0.4
+}

@@ -1,0 +1,56 @@
+{
+	"type": "GenericCrafter",
+	"name": "电磁线圈塑型器",
+	"outputItem": "electromagnetic-coil/3",
+	"size": 3,
+	"hasPower": true,
+	"hasLiquids": false,
+	"hasItems": true,
+	"craftTime": 50,
+	"itemCapacity": 25,
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			"DrawDefault",
+			{
+				"type": "DrawGlowRegion",
+				"color": "C47525",
+				"alpha": 0.6,
+				"bumpScale": 0.5
+			}
+		]
+	},
+	"craftEffect": {
+		"type": "ParticleEffect",
+		"particles": 5,
+		"baseLength": 3,
+		"length": 10,
+		"lifetime": 15,
+		"sizeFrom": 6,
+		"sizeTo": 0,
+		"colorFrom": "C4752580",
+		"colorTo": "FFD700",
+		"cone": 30
+	},
+	"consumes": {
+		"power": 4.5,
+		"items": {
+			"items": [
+				"copper/4",
+				"graphite/2",
+				"silicon/1"
+			]
+		}
+	},
+	"requirements": [
+		"copper/90",
+		"lead/60",
+		"graphite/30",
+		"silicon/25",
+		"titanium/10"
+	],
+	"category": "crafting",
+	"ambientSound": "loopMachine",
+	"ambientSoundVolume": 0.6,
+	"research": "core-protect"
+}

@@ -1,0 +1,55 @@
+{
+	"type": "CoreBlock",
+	"name": "天穹核心",
+	"description": "第六代核心，也是最后一代，其惊人的耗材突出了它的不一般，采用多层缓冲装甲结构增强防御，其内置一台放射性反应堆，从空气中摄取游离放射性元素发电。",
+	"size": 7,
+	"armor": 100,
+	"health": 53000,
+	"itemCapacity": 56000,
+	"unitCapModifier": 40,
+	"unitType": "chaos",
+	"requirements": [
+		"reinforced-glass/2100",
+		"copper/3000",
+		"lead/2800",
+		"titanium-alloy/7200",
+		"silicon/6500",
+		"thorium/5300",
+		"aluminum-alloy/8400",
+		"carbon-fiber/5300",
+		"electromagnetic-coil/750",
+		"polypropylene-fiber/900"
+	],
+	"category": "effect",
+	"research": "core-final",
+	"alwaysUnlocked": false
+}
+
+/*
+{
+	"type": "Core",
+	"name": "天穹核心",
+	"description": "斯维特顿星球上文明的最终壁垒，其惊人的耗材突出了它的不一般，采用多层缓冲装甲结构增强防御，其内置一台放射性反应堆，从空气中摄取游离放射性元素发电。",
+	"size": 6,
+	"armor": 100,
+	"health": 53000,
+	"itemCapacity": 56000,
+	"unitCapModifier": 40,
+	"defaultUnit": "gamma",
+	"requirements": [
+		"reinforced-glass/800",
+		"copper/3000",
+		"lead/2800",
+		"titanium-alloy/7200",
+		"silicon/6500",
+		"thorium/5300",
+		"aluminum-alloy/8400",
+		"carbon-fiber/5300",
+		"electromagnetic-coil/750",
+		"polypropylene-fiber/900"
+	],
+	"category": "effect",
+	"research": "core-foundation",
+	"alwaysUnlocked": false,
+}
+*/

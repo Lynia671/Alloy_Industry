@@ -1,0 +1,43 @@
+{
+	"name": "伊塔",
+	"description": "第四代核心机，技术终于破除掉了一大障碍，现已实现高装甲和更强大的建造器。保护鹤泰核心。",
+	"health": 4800,
+	"armor": 25,
+	"speed": 3.5,
+	"drag": 0.12,
+	"mass": 30,
+	"engineSize": 0,
+	"engineOffset": 0,
+	"itemCapacity": 450,
+	"mineSpeed": 5.5,
+	"mineTier": 5,
+	"buildSpeed": 4,
+	"payLoadCapacity": 0,
+	"flying": true,
+	"lowAltitude": true,
+	"weapons": [
+    {
+      "name": "eta-weapon",
+      "reload": 4,
+      "range": 55,
+      "alternate": true,
+      "shootSound": "laser",
+      "shootCone": 5,
+      "recoil": 1.5,
+      "bullets": [
+        {
+          "type": "BasicBulletType",
+          "damage": 120,
+          "speed": 11,
+          "lifetime": 60,
+          "width": 10,
+          "height": 12,
+          "hitEffect": "hitBullet",
+          "despawnEffect": "hitSmallExplosion"
+        }
+      ]
+    }
+  ],
+	"category": "core",
+	"alwaysUnlocked": true
+}

@@ -1,0 +1,28 @@
+{
+	"name": "超频穹顶投射仪",
+	"description": "更大的范围意味着更大的能量交换系统和更大的空间撕裂风险。",
+	"type": "OverdriveProjector",
+	"health": 1480,
+	"size": 3,
+	"range": 400,
+	"phaseRangeBoost": 45,
+	"speedBoostPhase": 1,
+	"speedBoost": 4.20,
+	"hasBoost": true,
+	"useTime": 60,
+	"consumes": {
+		"power": 17.35,
+	},
+	"requirements": [
+    "copper/400",
+    "lead/200",
+    "silicon/250",
+    "electromagnetic-coil/80"
+    "titanium-alloy/150",
+    "phase-fabric/50",
+    "pulse-alloy/430"
+    "metaglass/100"
+	],
+	"category": "effect",
+	"research": "fix-dome"
+}

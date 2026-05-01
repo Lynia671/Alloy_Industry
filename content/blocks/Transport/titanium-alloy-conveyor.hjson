@@ -1,0 +1,19 @@
+{
+    "type": "Conveyor",
+    "name": "钛合金传送带",
+    "speed": 1,
+    "displayedSpeed": 30,
+    "health": 210,
+    "requirements": [
+        "titanium-alloy/2",
+        "graphite/1"
+    ],
+    "category": "distribution",
+    "research": "lead-composite-conveyor",
+    "drawer": {
+        "type": "DrawMulti",
+        "drawers": [
+            "DrawDefault"
+        ]
+    }
+}

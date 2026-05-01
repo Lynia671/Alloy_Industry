@@ -1,0 +1,61 @@
+{
+  "type": "ItemTurret",
+  "name": "飞雹",
+  "description": "把冰雹的发射架改造加高后的产品，[red]只能对空攻击，切忌！",
+  "size": 1,
+  "health": 320,
+  "armor": 4.0,
+  "itemCapacity": 40,
+  "reload": 60,
+  "range": 280,
+  "inaccuracy": 12,
+  "shootCone": 40,
+  "targetAir": true,
+  "targetGround": false,
+  "ammoUseEffect": "casing2",
+  "ammoTypes": {
+    "copper": {
+      "damage": 10,
+      "speed": 6,
+      "lifetime": 45
+    },
+    "lead": {
+      "damage": 14,
+      "speed": 5.5,
+      "lifetime": 50
+    },
+    "graphite": {
+      "damage": 18,
+      "speed": 7,
+      "lifetime": 40
+    },
+    "silicon": {
+      "damage": 22,
+      "speed": 6.5,
+      "lifetime": 43
+    },
+    "titanium": {
+      "damage": 28,
+      "speed": 7.5,
+      "lifetime": 38
+    },
+    "thorium": {
+      "damage": 35,
+      "speed": 8,
+      "lifetime": 35
+    },
+    "plastanium": {
+      "damage": 42,
+      "speed": 9,
+      "lifetime": 32
+    }
+  },
+  "requirements": [
+    "copper/70",
+    "lead/50",
+    "graphite/30"
+  ],
+  "category": "turret",
+  "research": "scatter-anti-air",
+  "shootSound": "shootSnap",
+}

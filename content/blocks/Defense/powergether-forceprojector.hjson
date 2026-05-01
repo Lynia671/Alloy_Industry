@@ -1,0 +1,52 @@
+{
+  "type": "ForceProjector",
+  "name": "聚能穹顶力场发生器",
+  "description": "利用大量高密度压缩的电磁线圈和先进的能力转化技术将巨量电力转化为力场，过程中需要聚集大量的能量和释放恐怖的热量且产生较大的工作噪音。庞大的穹顶放射仪和高密度的能量转换系统让它拥有了恐怖的覆盖范围，[yellow]破盾后会导致电子紊乱，需要较长时间自修复。[red]其内部存储的能量足以摧毁一个T6单位。"
+  "size": 6,
+  "health": 24800,
+  "armor": 18,
+  "itemCapacity": 170,
+  "liquidCapacity": 420,
+  "shieldHealth": 68000,
+  "phaseRadiusBoost": 80,
+  "phaseShieldBoost": 1800,
+  "radius": 375.47,
+  "cooldownNormal": 30,
+  "cooldownBrokenBase": 10,
+  "cooldownLiquid": 4,
+  "regen": 3.0,
+  "sides": 16,
+  "consumes": {
+    "power": {
+      "usage": 138.33
+    }
+  },
+  "requirements": [
+    "copper/2400",
+    "lead/1800",
+    "silicon/2750",
+    "electromagnetic-coil/5160",
+    "titanium-alloy/4350",
+    "aluminum-alloy/1800",
+    "thorium/1800",
+    "reinforced-glass/1100"
+  ],
+  "category": "effect",
+  "research": "force-dome",
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      "DrawDefault",
+      {
+        "type": "DrawShieldRegion"
+      },
+      {
+        "type": "DrawGlowRegion",
+        "color": "68C8FF",
+        "alpha": 0.6
+      }
+    ]
+  },
+  "ambientSound": "loopShield",
+  "ambientSoundVolume": 2.27
+}

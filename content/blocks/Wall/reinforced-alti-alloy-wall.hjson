@@ -1,0 +1,25 @@
+{
+  "type": "Wall",
+  "name": "强化钛铝复合收容块",
+  "description": "采用多种复合结构的终极复合合金墙。[cyan]超高强度和电磁阻尼层可有效吸收并分散重型火力冲击。[orange]通常用来集中构建单位，[red]不推荐用作防御工事。",
+  "size": 3,
+  "health": 13200,
+  "armor": 42.0,
+  "buildTime": 3600,
+  "requirements": [
+    "titanium-alloy/280",
+    "aluminum-alloy/320",
+    "silicon/190",
+    "thorium/185"
+    "carbon-fiber/175",
+    "electromagnetic-coil/70",
+  ],
+  "category": "defense",
+  "research": "big-aluminum-alloy-wall",
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      "DrawDefault"
+    ]
+  }
+}

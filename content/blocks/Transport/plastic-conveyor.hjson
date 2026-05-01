@@ -1,0 +1,25 @@
+{
+    "type": "Conveyor",
+    "name": "塑料传送带",
+    "speed": 0.30,
+    "displayedSpeed": 12,
+    "health": 20,
+    "insulated": true,
+    "requirements": [
+        "plastic/2"
+    ],
+    "category": "distribution",
+    "research": "lead-composite-conveyor",
+    "drawer": {
+        "type": "DrawMulti",
+        "drawers": [
+            "DrawDefault",
+            {
+                "type": "DrawGlowRegion",
+                "color": "00FFFF",
+                "alpha": 0.6,
+                "bumpScale": 0.8
+            }
+        ]
+    }
+}

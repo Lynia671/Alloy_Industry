@@ -1,0 +1,27 @@
+{
+	"type": "PowerTurret",
+	"name": "崩阻",
+	"description": "中程电力防御炮台。释放高能电弧，能在多个敌人之间跳跃传导。射程远，连锁能力强。",
+	"health": 650,
+	"size": 1,
+	"reload": 20,
+	"range": 140,
+	"rotateSpeed": 25,
+	"shoot": { "type": "ShootSingle" },
+	"consumes": { "power": 5.75 },
+	"shootType": {
+		"type": "LightningBulletType",
+		"damage": 48,
+		"lightningLength": 100,
+		"lightningColor": "FFD700",
+		"hitColor": "FFD700",
+		"hitEffect": "hitLancer",
+		"despawnEffect": "hitLancer",
+		"shootEffect": "shootBig",
+		"status": "shocked",
+		"statusDuration": 60
+	},
+	"requirements": [ "copper/90", "lead/70", "silicon/60", "graphite/40" ],
+	"category": "turret",
+	"research": "duo-ultra"
+}

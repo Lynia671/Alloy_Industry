@@ -1,0 +1,38 @@
+{
+	"type": "Conveyor",
+	"name": "电磁传送带",
+	"description": "利用线性电磁场将物品加速至铝合金钢架所能承受的速度，在战场上安全快速的运输物资。",
+	"size": 1,
+	"speed": 3.0,
+	"displayedSpeed": 60,
+	"health": 280,
+	"armor": 6.0,
+	"phaseRange": 12,
+	"requirements": [
+		"aluminum-alloy/2",
+		"electromagnetic-coil/1",
+		"silicon/1"
+	],
+	"category": "distribution",
+	"research": "lead-composite-conveyor",
+	"insulated": true,
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			"DrawDefault",
+			{
+				"type": "DrawGlowRegion",
+				"color": "00FFFF",
+				"alpha": 0.6,
+				"bumpScale": 0.8
+			},
+			{
+				"type": "DrawPhaseField",
+				"color": "00FFFF30"
+			}
+		]
+	},
+	"ambientSound": "loopSpore",
+	"ambientSoundVolume": 0.4,
+	"buildCostMultiplier": 1.5
+}

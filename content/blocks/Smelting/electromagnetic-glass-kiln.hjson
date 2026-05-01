@@ -1,0 +1,57 @@
+{
+	"type": "GenericCrafter",
+	"name": "电磁玻璃窑炉",
+	"outputItem": "metaglass/14",
+	"size": 4,
+	"hasPower": true,
+	"hasLiquids": false,
+	"hasItems": true,
+	"craftTime": 60,
+	"itemCapacity": 40,
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			"DrawDefault",
+			{
+				"type": "DrawGlowRegion",
+				"color": "00FFFF",
+				"alpha": 0.7,
+				"bumpScale": 0.8
+			}
+		]
+	},
+	"craftEffect": {
+		"type": "ParticleEffect",
+		"particles": 4,
+		"baseLength": 2,
+		"length": 15,
+		"lifetime": 20,
+		"sizeFrom": 8,
+		"sizeTo": 0,
+		"colorFrom": "00FFFFFF",
+		"colorTo": "FFFFFF",
+		"cone": 45
+	},
+	"consumes": {
+		"power": 7.2,
+		"items": {
+			"items": [
+				"sand/18",
+				"lead/12"
+			]
+		}
+	},
+	"requirements": [
+		"copper/130",
+		"lead/95",
+		"metaglass/70",
+		"aluminum-alloy/65",
+		"silicon/40",
+		"graphite/30",
+		"electromagnetic-coil/15"
+	],
+	"category": "crafting",
+	"ambientSound": "loopMachine",
+	"ambientSoundVolume": 0.5,
+	"research": "electromagnetic-coil-shaper"
+}

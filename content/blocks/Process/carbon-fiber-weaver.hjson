@@ -1,0 +1,57 @@
+{
+	"type": "GenericCrafter",
+	"name": "碳纤维编织器",
+	"outputItem": "carbon-fiber/7",
+	"size": 3,
+	"hasPower": true,
+	"hasLiquids": true,
+	"hasItems": true,
+	"health": 1600,
+	"craftTime": 90,
+	"itemCapacity": 30,
+	"liquidCapacity": 60,
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			"DrawDefault",
+			{
+				"type": "DrawRegion",
+				"suffix": "-spinner",
+				"rotationSpeed": 15
+			}
+		]
+	},
+	"craftEffect": {
+		"type": "ParticleEffect",
+		"particles": 6,
+		"baseLength": 3,
+		"length": 18,
+		"lifetime": 30,
+		"sizeFrom": 5,
+		"sizeTo": 0,
+		"colorFrom": "1A1A1A80",
+		"colorTo": "4D4D4D",
+		"cone": 360
+	},
+	"consumes": {
+		"power": 9.5,
+		"liquid": "oil/1",
+		"items": {
+			"items": [
+				"graphite/4"
+			]
+		}
+	},
+	"requirements": [
+		"copper/200",
+		"lead/150",
+		"silicon/120",
+		"titanium/100",
+		"aluminum-alloy/80",
+		"electromagnetic-coil/40"
+	],
+	"category": "crafting",
+	"ambientSound": "loopMachine",
+	"ambientSoundVolume": 0.75,
+	"research": "plastic-compressor"
+}

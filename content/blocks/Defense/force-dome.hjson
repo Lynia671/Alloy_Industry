@@ -1,0 +1,46 @@
+{
+  "type": "ForceProjector",
+  "name": "力墙穹顶",
+  "description": "大型力场护盾发生器，以自身为范围创建一个大型力场吸收范围内的伤害。[green]需要大量水冷却发生器系统。",
+  "size": 3,
+  "health": 1500,
+  "armor": 8.0,
+  "itemCapacity": 40,
+  "liquidCapacity": 85,
+  "shieldHealth": 2500,
+  "radius": 260,
+  "cooldown": 2700,
+  "regen": 3.0,
+  "consumes": {
+    "power": {
+      "usage": 12.0
+    }
+  },
+  "requirements": [
+    "copper/400",
+    "lead/200",
+    "silicon/250",
+    "electromagnetic-coil/1160",
+    "titanium-alloy/350",
+    "aluminum-alloy/50",
+    "reinforced-glass/100"
+  ],
+  "category": "effect",
+  "research": "fix-dome",
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      "DrawDefault",
+      {
+        "type": "DrawShieldRegion"
+      },
+      {
+        "type": "DrawGlowRegion",
+        "color": "68C8FF",
+        "alpha": 0.6
+      }
+    ]
+  },
+  "ambientSound": "loopShield",
+  "ambientSoundVolume": 0.3
+}

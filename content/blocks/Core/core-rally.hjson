@@ -1,0 +1,20 @@
+{
+	"type": "CoreBlock",
+	"name": "瑞勒核心",
+	"description": "第二代核心。强化了装甲和存储系统，单位上限提升。[lightgray]可以被更高级的核心覆盖升级。",
+	"size": 3,
+	"health": 6000,
+	"armor": 6,
+	"itemCapacity": 12000,
+	"unitCapModifier": 8,
+	"unitType": "epsilon",
+	"team": "sharded",
+	"coreZoneBuildable": true,
+	"requirements": [
+		"copper/2100",
+		"lead/1900",
+		"graphite/800"
+	],
+	"category": "effect",
+	"research": "core-protect"
+}

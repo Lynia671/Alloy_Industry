@@ -1,0 +1,14 @@
+{
+	"type": "Wall",
+	"name": "大型塑料墙",
+	"description": "巨型的塑料板材，用于快速封闭缺口。结构强度非常低，极易被点燃，遇到火焰攻击会迅速软化甚至燃烧且无法有效抵御敌人的进攻。",
+	"size": 2,
+	"health": 820,
+	"requirements": [
+		"plastic/16" 
+	],
+	"category": "defense",
+	"research": "plastic-wall",
+	"buildCostMultiplier": 0.5,
+	"flammability": 18,
+}

@@ -1,0 +1,23 @@
+{
+	"name": "电磁线圈墙",
+	"type": "Wall",
+	"armor": 16,
+	"lightningChance": 0.1,
+	"lightningDamage": 45,
+	"lightningLength": 20,
+	"health": 900,
+	"size": 2,
+	"insulated": true,
+	"absorbLasers": true,
+	"requirements": [
+		"electromagnetic-coil/28",
+		"metaglass/8"
+	],
+	"category": "defense",
+	"research": "copper-lead-wall"
+    "consumes": {
+	"powerBuffered": 400
+	},
+	"size": 1,
+	"type": "Battery",
+}

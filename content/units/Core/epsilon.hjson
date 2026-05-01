@@ -1,0 +1,43 @@
+{
+	"name": "艾普西龙",
+	"description": "第二代核心机，采用多层缓冲装甲，容量大幅提升，保护瑞勒核心",
+	"health": 1500,
+	"armor": 8,
+	"speed": 3.1,
+	"drag": 0.12,
+	"mass": 15,
+	"engineSize": 0,
+	"engineOffset": 0,
+	"itemCapacity": 200,
+	"mineSpeed": 4.5,
+	"mineTier": 3,
+	"buildSpeed": 4,
+	"payLoadCapacity": 0,
+	"flying": true,
+	"lowAltitude": true,
+	"weapons": [
+    {
+      "name": "epsilon-weapon",
+      "reload": 6,
+      "range": 45,
+      "alternate": true,
+      "shootSound": "machineGun",
+      "shootCone": 5,
+      "recoil": 1.0,
+      "bullets": [
+        {
+          "type": "BasicBulletType",
+          "damage": 60,
+          "speed": 9,
+          "lifetime": 60,
+          "width": 8,
+          "height": 10,
+          "hitEffect": "hitBullet",
+          "despawnEffect": "hitSmallExplosion"
+        }
+      ]
+    }
+  ],
+	"category": "core",
+	"alwaysUnlocked": true
+}
